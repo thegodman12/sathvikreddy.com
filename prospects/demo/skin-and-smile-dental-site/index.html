@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin and Smile Dental Clinic - Deira, Dubai</title>
+<style>
+:root{
+  --ivory:#FFF9F5; --rose:#F7E4E2; --rose-deep:#E9A9A5; --teal:#0FA3A3; --teal-deep:#0B7C7C;
+  --ink:#3A2E2A; --muted:#8A7570; --card:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--ivory);line-height:1.6}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{background:#fff;border-bottom:1px solid var(--rose);position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:44px;height:44px;border-radius:12px}
+.brand-name{font-family:Georgia,serif;font-size:22px;font-weight:bold;color:var(--ink)}
+.brand-sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--teal-deep)}
+.nav-links a{margin-left:20px;text-decoration:none;color:var(--ink);font-size:14px;font-weight:600}
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:13px 30px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;box-shadow:0 6px 18px rgba(15,163,163,.28)}
+.btn:hover{background:var(--teal-deep)}
+.btn-outline{display:inline-block;background:#fff;color:var(--teal-deep);padding:12px 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid var(--teal)}
+.hero{background:linear-gradient(135deg,var(--rose) 0%,#FBEFED 55%,var(--ivory) 100%);padding:70px 0 60px}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;background:#fff;color:var(--teal-deep);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+h1.serif{font-size:46px;line-height:1.15;margin-bottom:16px;color:var(--ink)}
+h1 .accent{color:var(--teal-deep)}
+.hero p.lead{font-size:17px;color:var(--muted);max-width:480px;margin-bottom:26px}
+.rating-badge{display:flex;align-items:center;gap:10px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 4px 16px rgba(0,0,0,.07);max-width:420px;margin-bottom:26px}
+.stars{color:#F5A623;font-size:18px;letter-spacing:2px}
+.rating-badge strong{font-size:16px}
+.rating-badge span{font-size:13px;color:var(--muted)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-art{display:flex;justify-content:center}
+.tooth-card{background:#fff;border-radius:26px;padding:44px;box-shadow:0 14px 40px rgba(233,169,165,.35);text-align:center}
+.tooth-card img{width:130px;height:130px}
+.tooth-card p{margin-top:16px;font-size:13px;color:var(--muted)}
+section{padding:60px 0}
+.section-title{text-align:center;margin-bottom:12px}
+.section-title h2.serif{font-size:34px;margin-bottom:8px}
+.section-sub{text-align:center;color:var(--muted);max-width:620px;margin:0 auto 38px;font-size:16px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.panel{background:var(--card);border-radius:22px;padding:34px;box-shadow:0 8px 26px rgba(0,0,0,.06)}
+.panel.dental{border-top:6px solid var(--teal)}
+.panel.skin{border-top:6px solid var(--rose-deep)}
+.panel h3.serif{font-size:24px;margin-bottom:6px}
+.panel .tag{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:14px}
+.panel.dental .tag{color:var(--teal-deep)}
+.panel.skin .tag{color:#C97E7A}
+.panel ul{list-style:none}
+.panel li{padding:11px 0;border-bottom:1px dashed #EFE0DC;font-size:15px;display:flex;align-items:center;gap:10px}
+.panel li:last-child{border-bottom:none}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.panel.dental .dot{background:var(--teal)}
+.panel.skin .dot{background:var(--rose-deep)}
+.doctors{background:#fff}
+.doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.doc{background:var(--ivory);border-radius:20px;padding:30px;text-align:center}
+.doc .avatar{width:74px;height:74px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--rose-deep));color:#fff;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:26px;margin:0 auto 14px}
+.doc h4{font-size:19px;margin-bottom:4px}
+.doc .role{color:var(--teal-deep);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.doc p{font-size:14px;color:var(--muted)}
+.reviews{background:linear-gradient(180deg,var(--rose) 0%,var(--ivory) 100%)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:#fff;border-radius:20px;padding:28px;box-shadow:0 8px 22px rgba(0,0,0,.06)}
+.rev .stars{font-size:15px;margin-bottom:12px}
+.rev p{font-size:14.5px;color:var(--ink);margin-bottom:14px}
+.rev .who{font-size:13px;color:var(--muted);font-weight:700}
+.branches .panel.branch{border-top:6px solid var(--teal-deep)}
+.branch h3{font-size:20px;margin-bottom:4px}
+.branch p{font-size:14px;color:var(--muted);margin-bottom:6px}
+.branch a{color:var(--teal-deep);font-weight:700;text-decoration:none}
+.contact{background:var(--ink);color:#F6EDE9}
+.contact h2.serif{color:#fff}
+.contact .section-sub{color:#CBB9B3}
+.contact-card{background:#4A3A36;border-radius:22px;padding:36px;max-width:640px;margin:0 auto;text-align:center}
+.contact-card .row{margin:16px 0;font-size:16px}
+.contact-card a{color:#fff;text-decoration:none;font-weight:700}
+.contact-card .big{font-size:26px;font-family:Georgia,serif}
+footer{background:#241B19;color:#9A8681;text-align:center;padding:26px 0;font-size:13px}
+@media(max-width:820px){
+  .hero-inner,.split,.doc-grid,.rev-grid{grid-template-columns:1fr}
+  h1.serif{font-size:34px}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230FA3A3'/%3E%3Cpath d='M32 12c-7 0-11 5-11 11 0 7 4 10 4 17 0 5 2 9 4 9 3 0 2-7 3-12 1 5 0 12 3 12 2 0 4-4 4-9 0-7 4-10 4-17 0-6-4-11-11-11z' fill='%23fff'/%3E%3C/svg%3E" alt="Skin and Smile logo">
+      <div>
+        <div class="brand-name">Skin &amp; Smile</div>
+        <div class="brand-sub">Dental Clinic</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="tel:+971544601011">Book a Visit</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">Dental + Skin Clinic &middot; Deira, Dubai</span>
+      <h1 class="serif">A healthy <span class="accent">smile</span>, glowing <span class="accent">skin</span>, one clinic.</h1>
+      <p class="lead">Dentistry and skin care under one roof at Al Dana Center, Deira. Gentle, painless treatments in a spotless, modern clinic with a calming atmosphere.</p>
+      <div class="rating-badge">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div><strong>4.8 out of 5</strong><br><span>from 144 Google reviews</span></div>
+      </div>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+971544601011">Call +971 54 460 1011</a>
+        <a class="btn-outline" href="#services">Our Services</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="tooth-card">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='58' fill='%23F7E4E2'/%3E%3Cpath d='M60 22c-13 0-21 9-21 21 0 13 8 19 8 33 0 9 4 16 8 16 5 0 3-13 5-22 2 9 0 22 5 22 4 0 8-7 8-16 0-14 8-20 8-33 0-12-8-21-21-21z' fill='%23fff' stroke='%230FA3A3' stroke-width='4'/%3E%3C/svg%3E" alt="Healthy smile">
+        <p>Spotless. Modern. Calming.<br>Walk in relaxed, walk out smiling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-title"><h2 class="serif">Two specialties, one address</h2></div>
+    <p class="section-sub">Everything you need for your smile and your skin, without running between clinics.</p>
+    <div class="split">
+      <div class="panel dental">
+        <div class="tag">Smile Dentistry</div>
+        <h3 class="serif">Dental Care</h3>
+        <ul>
+          <li><span class="dot"></span>Deep cleaning and polishing</li>
+          <li><span class="dot"></span>Painless tooth extractions</li>
+          <li><span class="dot"></span>Fillings and restorations</li>
+          <li><span class="dot"></span>Gentle, explain-every-step care</li>
+        </ul>
+      </div>
+      <div class="panel skin">
+        <div class="tag">Glow Skin</div>
+        <h3 class="serif">Skin &amp; Aesthetics</h3>
+        <ul>
+          <li><span class="dot"></span>Facials and skincare treatments</li>
+          <li><span class="dot"></span>Laser skin resurfacing</li>
+          <li><span class="dot"></span>Microneedling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="doctors" class="doctors">
+  <div class="wrap">
+    <div class="section-title"><h2 class="serif">Meet your doctors</h2></div>
+    <p class="section-sub">Named in patient reviews for gentle hands and clear explanations.</p>
+    <div class="doc-grid">
+      <div class="doc">
+        <div class="avatar">A</div>
+        <h4>Dr. Ashitha</h4>
+        <div class="role">Al Dana Branch</div>
+        <p>Knowledgeable and gentle, takes time to explain every step of treatment so patients feel completely at ease.</p>
+      </div>
+      <div class="doc">
+        <div class="avatar">N</div>
+        <h4>Dr. Niyas</h4>
+        <div class="role">Dental Care</div>
+        <p>Praised for painless deep cleaning and extractions, with a professional and accommodating chairside manner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="section-title"><h2 class="serif">What patients say</h2></div>
+    <p class="section-sub">Real words from Google reviews.</p>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;I had such a great experience at Skin and Smile Dental Clinic, Aldana branch. From the moment I walked in, the staff was incredibly welcoming, professional, and made me feel comfortable. The clinic itself is spotless, modern, and has a very calming atmosphere. Dr. Ashitha is truly outstanding, knowledgeable, gentle, and took the time to thoroughly explain every step of my treatment.&rdquo;</p>
+        <div class="who">Latifa Imime</div>
+      </div>
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;I'm very satisfied with the services. I did deep cleaning and I'm super happy with the result. Thank you Dr. Niyas and Jocelyn the assistant. They are very professional and nice.&rdquo;</p>
+        <div class="who">Nisar</div>
+      </div>
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;The doctor and dental assistant were extremely friendly, and I didn't feel any pain during the procedure. The whole team sitting at the front are very welcoming and friendly. This is the best dental clinic in Dubai so far.&rdquo;</p>
+        <div class="who">Carla Obsequio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="branches">
+  <div class="wrap">
+    <div class="section-title"><h2 class="serif">Two branches, same gentle care</h2></div>
+    <p class="section-sub">Visit the branch closest to you.</p>
+    <div class="split">
+      <div class="panel branch">
+        <h3>Al Dana Branch &middot; Deira</h3>
+        <p>Al Dana Center, 4th Floor, Room 408, Al Maktoum Rd, Al Muraqqabat, Deira, Dubai</p>
+        <p>Open daily 10:00 AM - 10:00 PM</p>
+        <a href="tel:+971544601011">Call +971 54 460 1011</a>
+      </div>
+      <div class="panel branch">
+        <h3>Al Satwa Branch</h3>
+        <p>Rose House Office Building, Al Hudaiba Rd, Al Bada'a, Dubai</p>
+        <a href="tel:+971564233443">Call +971 56 423 3443</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-title"><h2 class="serif">Book your visit</h2></div>
+    <p class="section-sub">Call or message us. Walk-ins welcome.</p>
+    <div class="contact-card">
+      <div class="row big"><a href="tel:+971544601011">+971 54 460 1011</a></div>
+      <div class="row"><a href="mailto:skinandsmile2022@gmail.com">skinandsmile2022@gmail.com</a></div>
+      <div class="row" style="color:#CBB9B3;font-size:14px">Al Dana Center, 4th Floor, Room 408, Al Maktoum Rd, Deira, Dubai<br>Open daily 10:00 AM - 10:00 PM</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Skin and Smile Dental Clinic &middot; Deira &amp; Al Satwa, Dubai &middot; Demo website mockup</div>
+</footer>
+
+</body>
+</html>
