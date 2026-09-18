@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glow Prime Dental Clinic | Boutique Dentistry in Al Majaz, Sharjah</title>
+<meta name="description" content="Glow Prime Dental Clinic in Al Majaz, Sharjah. Rated 5.0 from 25 Google reviews. Clear aligners, orthodontics, painless dentistry with Dr. Prachi.">
+<style>
+:root{--ivory:#FAF6EF;--gold:#C9A24B;--golddeep:#A87F2E;--espresso:#241C14;--blush:#F3E3D3;--white:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--espresso);background:var(--ivory);line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.2}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,239,.96);backdrop-filter:blur(6px);border-bottom:1px solid #EADFCB}
+.hd{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{font-family:Georgia,serif;font-size:22px;letter-spacing:.5px}
+.brand .gp{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F6DFAE,var(--gold));color:#fff;font-size:15px;font-weight:700;margin-right:10px;font-family:Georgia,serif}
+.btn{display:inline-block;padding:14px 30px;font-weight:600;text-decoration:none;border-radius:999px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--golddeep));color:#fff;box-shadow:0 8px 20px rgba(201,162,75,.35)}
+.btn-line{background:transparent;color:var(--espresso);border:1px solid var(--gold)}
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--golddeep);font-weight:600}
+.hero{background:radial-gradient(ellipse at 70% 20%,rgba(201,162,75,.28),transparent 55%),radial-gradient(ellipse at 15% 80%,rgba(243,227,211,.9),transparent 50%),var(--ivory);padding:70px 0 56px}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(34px,4.8vw,54px);margin:14px 0 16px}
+.hero h1 em{font-style:italic;color:var(--golddeep)}
+.hero p.sub{font-size:18px;color:#5c4f42;margin-bottom:26px;max-width:520px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.rating-line{margin-top:20px;font-size:15px;color:#5c4f42}
+.rating-line .stars{color:var(--gold);letter-spacing:3px;font-size:17px}
+.hero img.glow{width:100%;max-width:300px;display:block;margin:0 auto;filter:drop-shadow(0 18px 30px rgba(201,162,75,.35))}
+.rule{border:none;border-top:1px solid var(--gold);opacity:.5;margin:0}
+section{padding:60px 0}
+h2{font-size:clamp(28px,3.8vw,40px);margin:12px 0 10px}
+.lead{color:#5c4f42;max-width:640px;margin-bottom:28px;font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--white);border:1px solid #EADFCB;border-radius:20px;padding:28px;box-shadow:0 10px 30px rgba(201,162,75,.10)}
+.card .dot{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F6DFAE,var(--gold));margin-bottom:14px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{font-size:15px;color:#5c4f42}
+.exp{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:var(--white);border:1px solid #EADFCB;border-radius:24px;padding:40px;box-shadow:0 10px 30px rgba(201,162,75,.12)}
+.exp ul{list-style:none;margin-top:16px}
+.exp li{padding:10px 0 10px 30px;position:relative;font-size:16px;color:#4a3e32}
+.exp li::before{content:"\2726";position:absolute;left:0;color:var(--gold)}
+.doc{text-align:center;max-width:640px;margin:0 auto}
+.doc .face{width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:radial-gradient(circle at 35% 30%,#F6DFAE,var(--gold));display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:36px;color:#fff;box-shadow:0 12px 28px rgba(201,162,75,.35)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.quote{background:var(--white);border:1px solid #EADFCB;border-radius:20px;padding:28px;position:relative}
+.quote .qm{font-family:Georgia,serif;font-size:52px;color:var(--gold);line-height:1}
+.quote p.t{font-family:Georgia,serif;font-size:17px;font-style:italic;color:#4a3e32;margin:6px 0 12px}
+.quote .who{font-size:13px;color:#8a7a66;font-weight:600}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.hours{width:100%;border-collapse:collapse;background:var(--white);border:1px solid #EADFCB;border-radius:16px;overflow:hidden}
+.hours td{padding:13px 20px;border-bottom:1px solid #F1E8D6;font-size:15px}
+.hours tr:last-child td{border-bottom:none}
+.hours td:last-child{text-align:right;font-weight:600;color:var(--golddeep)}
+.addr{font-size:17px;margin-bottom:16px}
+.cta-band{background:linear-gradient(135deg,var(--gold),var(--golddeep));color:#fff;border-radius:28px;padding:48px;text-align:center}
+.cta-band h2{color:#fff}
+.cta-band p{color:#fdf3e0;margin:10px 0 22px}
+footer{background:var(--espresso);color:#cbbfae;padding:32px 0;font-size:14px}
+footer a{color:#fff}
+.floatbar{position:fixed;bottom:14px;left:14px;right:14px;z-index:60;display:flex;gap:10px;max-width:520px;margin:0 auto}
+.floatbar a{flex:1;text-align:center;padding:15px;border-radius:999px;font-weight:600;text-decoration:none}
+@media(max-width:720px){.hero .grid,.visit,.exp{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap hd">
+<div class="brand"><span class="gp">GP</span>Glow Prime Dental Clinic</div>
+<a class="btn btn-gold" href="tel:+971506819300">Book a Visit</a>
+</div></header>
+
+<section class="hero"><div class="wrap grid">
+<div>
+<div class="eyebrow">Al Majaz, Sharjah · Boutique dental care</div>
+<h1>Dentistry that feels <em>personal</em>, and looks after every detail.</h1>
+<p class="sub">Glow Prime is a small, beautifully organized clinic where Dr. Prachi guides every treatment herself, from clear aligners to painless root canals.</p>
+<div class="cta-row"><a class="btn btn-gold" href="tel:+971506819300">Call +971 50 681 9300</a><a class="btn btn-line" href="https://wa.me/971506819300">WhatsApp Us</a></div>
+<div class="rating-line"><span class="stars">★★★★★</span>&nbsp; 5.0 from 25 Google reviews</div>
+</div>
+<div><img class="glow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+CjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0iZyIgY3g9IjUwJSIgY3k9IjQyJSIgcj0iNjUlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRjZERkFFIi8+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiNGMUNFOEIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNFM0I3NUYiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz4KPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTAwIiByPSI5MiIgZmlsbD0idXJsKCNnKSIvPgo8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjcwIiBmaWxsPSIjRkFGNkVGIi8+CjxwYXRoIGQ9Ik04NiA3NGMtMTAgMC0xNiA2LTE2IDE1IDAgMTEgNyAxNyAxMCAzMCAyIDggNSAxNSA5IDE1IDUgMCA0LTEwIDExLTEwczYgMTAgMTEgMTBjNCAwIDctNyA5LTE1IDMtMTMgMTAtMTkgMTAtMzAgMC05LTYtMTUtMTYtMTUtNiAwLTggMi0xNCAycy04LTItMTQtMnoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0M5QTI0QiIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxjaXJjbGUgY3g9IjUyIiBjeT0iNTIiIHI9IjQiIGZpbGw9IiNmZmYiLz48Y2lyY2xlIGN4PSIxNTAiIGN5PSI2MCIgcj0iMyIgZmlsbD0iI2ZmZiIvPjxjaXJjbGUgY3g9IjE0NiIgY3k9IjE1MCIgcj0iNCIgZmlsbD0iI2ZmZiIvPjxjaXJjbGUgY3g9IjU4IiBjeT0iMTUwIiByPSIzIiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPg==" alt="Glowing tooth in warm gold light"></div>
+</div></section>
+<hr class="rule">
+
+<section><div class="wrap">
+<div class="eyebrow">Signature care</div>
+<h2>Treatments we are known for</h2>
+<p class="lead">Orthodontic expertise in a calm, boutique setting. Every plan is explained honestly, including when you do not need treatment.</p>
+<div class="cards">
+<div class="card"><div class="dot"></div><h3>Clear Aligners</h3><p>Discreet teeth straightening with close progress monitoring from start to finish.</p></div>
+<div class="card"><div class="dot"></div><h3>Orthodontic Treatment</h3><p>Skilled orthodontic care that patients call life changing, guided by Dr. Prachi.</p></div>
+<div class="card"><div class="dot"></div><h3>Cavity Fillings</h3><p>Gentle, precise fillings and corrections that feel like nothing at all.</p></div>
+<div class="card"><div class="dot"></div><h3>Tooth Extractions</h3><p>Painless extractions done without hassles, even for anxious patients.</p></div>
+<div class="card"><div class="dot"></div><h3>Root Canal Treatment</h3><p>Anesthesia so gentle patients say they did not feel even a small pinch.</p></div>
+<div class="card"><div class="dot"></div><h3>General Dentistry</h3><p>A well equipped clinic for all kinds of dental ailments, kept to strict hygiene standards.</p></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="exp">
+<div>
+<div class="eyebrow">The Glow Prime experience</div>
+<h2 style="margin-top:10px">Small clinic, rare attention</h2>
+<ul>
+<li>Painless anesthesia, perfected over years of practice</li>
+<li>Honest advice: treatment suggested only where truly needed</li>
+<li>Clear aligner journeys monitored closely at every stage</li>
+<li>Appointment slots followed diligently, no long waits</li>
+<li>Strict safety and hygiene in a calm, organized setup</li>
+</ul>
+</div>
+<div class="doc">
+<div class="face">P</div>
+<div class="eyebrow">Your dentist</div>
+<h2 style="font-size:30px">Dr. Prachi</h2>
+<p style="color:#5c4f42;margin-top:10px">Patients describe Dr. Prachi as knowledgeable, gracious and genuinely trustworthy. She diagnoses precisely, explains every procedure in a friendly way, and her gentle hands make even anesthesia painless.</p>
+</div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="eyebrow">Patient stories</div>
+<h2>Words that keep us glowing</h2>
+<div class="quotes" style="margin-top:24px">
+<div class="quote"><div class="qm">&ldquo;</div><p class="t">Dr. Prachi helped me with clear aligners, and the entire journey was smooth from start to finish. She monitored my progress closely.</p><div class="who">Ladli Khatoon, Google review</div></div>
+<div class="quote"><div class="qm">&ldquo;</div><p class="t">She suggested a perfect treatment, and also suggested where treatment is not needed. A very genuine and trustworthy doctor.</p><div class="who">Irfan Pathan, Google review</div></div>
+<div class="quote"><div class="qm">&ldquo;</div><p class="t">It was my first time receiving anesthesia without feeling any pain at all, not even a small pinch. Her hands are truly amazing.</p><div class="who">Zahid Ikram, Google review</div></div>
+<div class="quote"><div class="qm">&ldquo;</div><p class="t">Glow Prime is a small but well equipped clinic for all kind of dental ailments. Dr. Prachi is a gracious and highly knowledgeable dentist.</p><div class="who">Sarabjit Kaur, Google review</div></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="cta-band">
+<div class="eyebrow" style="color:#fff">Visit us</div>
+<h2>Al Fardan Centre, Al Majaz</h2>
+<p>Block A, 1st Floor, Office 105 · Open Mon to Thu and weekends, 9 AM to 9 PM · Closed Fridays</p>
+<div class="cta-row" style="justify-content:center"><a class="btn" style="background:#fff;color:var(--golddeep)" href="tel:+971506819300">Call +971 50 681 9300</a><a class="btn btn-line" style="color:#fff;border-color:#fff" href="https://wa.me/971506819300">WhatsApp</a></div>
+<p style="margin-top:18px"><a style="color:#fff" href="https://maps.google.com/?cid=1403716570800903259">Open in Google Maps</a></p>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="visit">
+<div>
+<div class="eyebrow">Find us</div>
+<h2>Glow Prime Dental Clinic</h2>
+<p class="addr" style="margin-top:14px">Al Fardan Centre, Block A,<br>1st Floor, Office 105, Al Majaz, Sharjah</p>
+<div class="cta-row"><a class="btn btn-gold" href="tel:+971506819300">Call Now</a><a class="btn btn-line" href="https://wa.me/971506819300">WhatsApp</a></div>
+</div>
+<table class="hours">
+<tr><td>Mon to Thu</td><td>9 AM to 9 PM</td></tr>
+<tr><td>Friday</td><td>Closed</td></tr>
+<tr><td>Sat and Sun</td><td>9 AM to 9 PM</td></tr>
+</table>
+</div></div></section>
+
+<footer><div class="wrap">
+<p><strong style="color:#fff">Glow Prime Dental Clinic</strong> · Al Fardan Centre, Block A, 1st Floor, Office 105, Al Majaz, Sharjah · <a href="tel:+971506819300">+971 50 681 9300</a></p>
+<p style="margin-top:8px">Demo concept website. Hours: Mon to Thu, Sat, Sun 9 AM to 9 PM. Friday closed.</p>
+</div></footer>
+
+<div class="floatbar"><a href="tel:+971506819300" style="background:var(--gold);color:#fff">Call Now</a><a href="https://wa.me/971506819300" style="background:var(--espresso);color:#fff">WhatsApp</a></div>
+</body>
+</html>

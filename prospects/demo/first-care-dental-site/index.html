@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Care Dental Clinic | Precise Dental Care in Al Nahda, Sharjah</title>
+<meta name="description" content="First Care Dental Clinic in Al Nahda, Sharjah. Rated 5.0 from 227 Google reviews. Implants, root canals, crowns, dentures. Dr. Seemab Jafferi.">
+<style>
+:root{--navy:#102A43;--steel:#E8EEF4;--teal:#00B8A9;--white:#fff;--ink:#2b3f52}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+h1,h2,h3{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:700;letter-spacing:-.5px;line-height:1.2;color:var(--navy)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,monospace}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--steel)}
+.hd{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:800;font-size:20px;color:var(--navy);display:flex;align-items:center;gap:10px}
+.brand .mark{width:34px;height:34px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;border-radius:8px;border:2px solid var(--teal)}
+.btn{display:inline-block;padding:13px 26px;font-weight:700;text-decoration:none;border-radius:6px}
+.btn-solid{background:var(--navy);color:#fff;border:2px solid var(--navy)}
+.btn-line{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);font-weight:700}
+.hero{background:linear-gradient(180deg,var(--steel) 0%,#fff 100%);padding:64px 0 48px;border-bottom:1px solid var(--steel)}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.hero h1{font-size:clamp(32px,4.6vw,52px);margin:10px 0 14px}
+.hero p.sub{font-size:18px;color:#3f556a;margin-bottom:24px;max-width:520px}
+.readouts{display:flex;gap:0;margin:24px 0;border:1px solid var(--steel);border-radius:8px;overflow:hidden;background:#fff}
+.ro{flex:1;padding:14px 10px;text-align:center;border-right:1px solid var(--steel)}
+.ro:last-child{border-right:none}
+.ro .v{font-family:ui-monospace,Menlo,monospace;font-size:24px;font-weight:700;color:var(--navy)}
+.ro .l{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#6b8199}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero img.motif{width:100%;max-width:300px;display:block;margin:0 auto}
+section{padding:56px 0}
+.sec-steel{background:var(--steel)}
+h2{font-size:clamp(26px,3.8vw,36px);margin:10px 0 8px}
+.lead{color:#4a6076;max-width:620px;margin-bottom:26px}
+.tick{height:1px;background:repeating-linear-gradient(90deg,var(--teal) 0 12px,transparent 12px 24px);margin:0 0 40px}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--steel);border:1px solid var(--steel);border-radius:10px;overflow:hidden}
+.srow{background:#fff;padding:24px;display:grid;grid-template-columns:64px 1fr;gap:18px;align-items:start}
+.srow .n{font-family:ui-monospace,Menlo,monospace;font-size:30px;font-weight:700;color:var(--teal)}
+.srow h3{font-size:19px;margin-bottom:6px}
+.srow p{font-size:15px;color:#4a6076}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.wcard{background:#fff;border:1px solid var(--steel);border-top:4px solid var(--teal);border-radius:8px;padding:22px}
+.wcard h3{font-size:17px;margin-bottom:6px}
+.wcard p{font-size:14px;color:#4a6076}
+.doc{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;background:#fff;border:1px solid var(--steel);border-radius:10px;padding:28px;max-width:760px;margin-top:24px}
+.doc .mono-face{width:120px;height:120px;border-radius:10px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700;border:2px solid var(--teal)}
+.revs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.rev{background:#fff;border:1px solid var(--steel);border-left:4px solid var(--teal);border-radius:8px;padding:22px}
+.rev .stars{color:var(--teal);font-size:16px;letter-spacing:2px}
+.rev p.q{font-size:15px;color:#3f556a;margin:10px 0;font-style:italic}
+.rev .who{font-weight:700;font-size:13px;color:var(--navy)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.hours{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--steel);border-radius:8px;overflow:hidden}
+.hours td{padding:13px 18px;border-bottom:1px solid var(--steel);font-size:15px}
+.hours tr:last-child td{border-bottom:none}
+.hours td:last-child{text-align:right;font-weight:700;color:var(--navy)}
+.addr{font-size:17px;margin-bottom:16px}
+footer{background:var(--navy);color:#9fb4c9;padding:32px 0;font-size:14px}
+footer a{color:#fff}
+.floatbar{position:fixed;bottom:14px;left:14px;right:14px;z-index:60;display:flex;gap:10px;max-width:520px;margin:0 auto}
+.floatbar a{flex:1;text-align:center;padding:15px;border-radius:8px;font-weight:700;text-decoration:none}
+@media(max-width:720px){.hero .grid,.svc,.revs,.visit{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap hd">
+<div class="brand"><span class="mark">FC</span>First Care Dental Clinic</div>
+<a class="btn btn-solid" href="tel:+97165366955">Book Now</a>
+</div></header>
+
+<section class="hero"><div class="wrap grid">
+<div>
+<div class="eyebrow">Al Nahda, Sharjah · Est. care, exact standards</div>
+<h1>Precise dentistry. Zero waiting. Fair prices.</h1>
+<p class="sub">First Care Dental Clinic delivers restorative dental work with surgical precision: implants, root canals, crowns and dentures, done right the first time.</p>
+<div class="readouts">
+<div class="ro"><div class="v">5.0</div><div class="l">Google rating</div></div>
+<div class="ro"><div class="v">227</div><div class="l">Reviews</div></div>
+<div class="ro"><div class="v">0</div><div class="l">Waiting delays</div></div>
+</div>
+<div class="cta-row"><a class="btn btn-solid" href="tel:+97165366955">Call +971 6 536 6955</a><a class="btn btn-line" href="https://wa.me/97165366955">WhatsApp</a></div>
+</div>
+<div><img class="motif" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+CjxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEI4QTkiIHN0cm9rZS13aWR0aD0iMyIvPgo8bGluZSB4MT0iMTAwIiB5MT0iMTQiIHgyPSIxMDAiIHkyPSIxODYiIHN0cm9rZT0iIzAwQjhBOSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtZGFzaGFycmF5PSI2IDYiLz4KPGxpbmUgeDE9IjE0IiB5MT0iMTAwIiB4Mj0iMTg2IiB5Mj0iMTAwIiBzdHJva2U9IiMwMEI4QTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNiA2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNDYiIGZpbGw9IiMxMDJBNDMiLz4KPHBhdGggZD0iTTg4IDg0Yy04IDAtMTMgNS0xMyAxMiAwIDkgNiAxNCA4IDI1IDEgNyA0IDEzIDggMTMgNCAwIDMtOCA5LThzNSA4IDkgOGM0IDAgNy02IDgtMTMgMi0xMSA4LTE2IDgtMjUgMC03LTUtMTItMTMtMTItNSAwLTcgMi05IDJzLTQtMi05LTJ6IiBmaWxsPSIjZmZmIi8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iNTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwQjhBOSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxwYXRoIGQ9Ik0zMCAzMGgxNk0zMCAzMHYxNk0xNzAgMzBoLTE2TTE3MCAzMHYxNk0zMCAxNzBoMTZNMzAgMTcwdi0xNk0xNzAgMTcwaC0xNk0xNzAgMTcwdi0xNiIgc3Ryb2tlPSIjMDBCOEE5IiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+" alt="Precision alignment mark over a tooth"></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">Treatment pathway</div>
+<h2>Six treatments, mastered</h2>
+<p class="lead">Every procedure follows the same exact protocol: diagnose precisely, explain fully, treat painlessly.</p>
+</div><div class="wrap"><div class="tick"></div></div>
+<div class="wrap"><div class="svc">
+<div class="srow"><div class="n">01</div><div><h3>Dental Implants</h3><p>Permanent, natural-feeling replacements for missing teeth. Patients praise the precise, considerate process.</p></div></div>
+<div class="srow"><div class="n">02</div><div><h3>Root Canal Treatment</h3><p>Save the natural tooth with a smooth, painless procedure and a clear step-by-step explanation.</p></div></div>
+<div class="srow"><div class="n">03</div><div><h3>Crown Capping</h3><p>Urgent crowns handled the same visit. No waiting, no consultation delay, just fast care.</p></div></div>
+<div class="srow"><div class="n">04</div><div><h3>Clip-on Dentures</h3><p>Comfortable, well-fitted dentures that restore your smile and confidence.</p></div></div>
+<div class="srow"><div class="n">05</div><div><h3>Tooth-Colored Fillings</h3><p>Seamless repairs that blend invisibly with your natural teeth.</p></div></div>
+<div class="srow"><div class="n">06</div><div><h3>Tooth Extractions</h3><p>Described by patients as smooth and painless, even for molar extractions.</p></div></div>
+</div></div></section>
+
+<section class="sec-steel"><div class="wrap">
+<div class="eyebrow">Why it works</div>
+<h2>The review pattern says it all</h2>
+<p class="lead">Across 227 five star reviews, the same themes repeat.</p>
+<div class="why">
+<div class="wcard"><h3>No waiting, no delays</h3><p>Urgent cases seen immediately. Organized, quick and effective visits.</p></div>
+<div class="wcard"><h3>Very reasonable prices</h3><p>Quality restorative work at prices patients call affordable.</p></div>
+<div class="wcard"><h3>Painless procedures</h3><p>Extractions, root canals and implants done smoothly and comfortably.</p></div>
+<div class="wcard"><h3>Exceptionally clean</h3><p>A fresh, spotless clinic patients notice the moment they walk in.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">Your dentist</div>
+<h2>Dr. Seemab Jafferi</h2>
+<div class="doc"><div class="mono-face">SJ</div>
+<div><h3>Precise, patient, and professional</h3><p style="color:#4a6076;margin-top:8px">Patients describe Dr. Seemab Jafferi as friendly and considerate. She patiently explains every issue and procedure in detail before starting, so you always know exactly what is happening and why.</p></div>
+</div></div></section>
+
+<section class="sec-steel"><div class="wrap">
+<div class="eyebrow">Patient reviews</div>
+<h2>227 five star reviews</h2>
+<div class="revs" style="margin-top:22px">
+<div class="rev"><div class="stars">★★★★★</div><p class="q">"No waiting, no consultation delay, just fast care. Dr. Jaffri was awesome, he saw the urgency and started the procedure immediately."</p><div class="who">Zehra jabeen Khan, Google review</div></div>
+<div class="rev"><div class="stars">★★★★★</div><p class="q">"My molar tooth extraction was so smooth and painless. Dr. Seemab Jafferi is so professional and well experienced."</p><div class="who">Steven Dsouza, Google review</div></div>
+<div class="rev"><div class="stars">★★★★★</div><p class="q">"The clinic is very clean, smells fresh, and the prices are very affordable. Dr. Jaffry did an amazing job restoring my smile back."</p><div class="who">Wathsala Mary, Google review</div></div>
+<div class="rev"><div class="stars">★★★★★</div><p class="q">"Dr. Jafferi is friendly, considerate and patiently explains in detail the issue and the procedure to be carried out."</p><div class="who">Pooja Rani, Google review</div></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">Visit</div>
+<h2>Tower D, Al Nahda, Sharjah</h2>
+<div class="visit" style="margin-top:20px">
+<div>
+<p class="addr"><strong>First Care Dental Clinic</strong><br>Tower D, 1st Floor, Office 102,<br>Hay Al Nahda, Sharjah</p>
+<div class="cta-row"><a class="btn btn-solid" href="tel:+97165366955">Call +971 6 536 6955</a><a class="btn btn-line" href="https://wa.me/97165366955">WhatsApp</a></div>
+<p style="margin-top:16px"><a href="https://maps.google.com/?cid=16425777745964654322">Open in Google Maps</a></p>
+</div>
+<table class="hours">
+<tr><td>Mon to Thu</td><td>10 AM to 2 PM, 5 PM to 9 PM</td></tr>
+<tr><td>Friday</td><td>10:30 AM to 1:30 PM, 5 PM to 9 PM</td></tr>
+<tr><td>Sat and Sun</td><td>10 AM to 2 PM, 5 PM to 9 PM</td></tr>
+</table>
+</div></div></section>
+
+<footer><div class="wrap">
+<p><strong style="color:#fff">First Care Dental Clinic</strong> · Tower D, 1st Floor, Office 102, Hay Al Nahda, Sharjah · <a href="tel:+97165366955">+971 6 536 6955</a></p>
+<p style="margin-top:8px">Demo concept website. Split-shift hours: 10 AM to 2 PM and 5 PM to 9 PM.</p>
+</div></footer>
+
+<div class="floatbar"><a href="tel:+97165366955" style="background:var(--navy);color:#fff">Call Now</a><a href="https://wa.me/97165366955" style="background:var(--teal);color:#fff">WhatsApp</a></div>
+</body>
+</html>
