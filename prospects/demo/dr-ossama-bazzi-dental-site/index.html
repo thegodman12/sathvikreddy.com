@@ -1,218 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Ossama Bazzi Dental Clinic - Hor Al Anz, Dubai</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr Ossama Bazzi Dental Clinic - Dubai | Oral &amp; Maxillofacial Surgeon</title>
+<meta name="description" content="Dr Ossama Bazzi Dental Clinic, Hor Al Anz, Dubai. BDS Damascus 1992, 21 years experience in implantology, oral surgery and cosmetic dentistry. Rated 4.9 from 138 reviews.">
 <style>
-:root{
-  --navy:#0B2239; --navy-deep:#071A2D; --copper:#C98A4B; --copper-light:#E4B67E;
-  --white:#FFFFFF; --paper:#F7F9FB; --ink:#1E2A36; --muted:#67788A;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.65}
-.serif{font-family:Georgia,"Times New Roman",serif}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-header{background:var(--navy-deep);position:sticky;top:0;z-index:20;border-bottom:2px solid var(--copper)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{width:46px;height:46px;border-radius:50%}
-.brand-name{font-family:Georgia,serif;font-size:21px;font-weight:bold;color:#fff}
-.brand-sub{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--copper-light)}
-.nav-links a{margin-left:20px;text-decoration:none;color:#D9E2EC;font-size:14px;font-weight:600}
-.btn{display:inline-block;background:var(--copper);color:#fff;padding:13px 30px;border-radius:4px;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.5px}
-.btn:hover{background:var(--copper-light)}
-.btn-outline{display:inline-block;background:transparent;color:#fff;padding:11px 28px;border-radius:4px;text-decoration:none;font-weight:700;font-size:15px;border:2px solid var(--copper-light)}
-.hero{background:linear-gradient(160deg,var(--navy-deep) 0%,var(--navy) 70%,#123352 100%);color:#fff;padding:80px 0 70px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:2px solid rgba(201,138,75,.25);border-radius:50%}
-.hero::before{content:"";position:absolute;right:-60px;top:-60px;width:300px;height:300px;border:2px solid rgba(201,138,75,.15);border-radius:50%}
-.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;position:relative;z-index:2}
-.eyebrow{display:inline-block;color:var(--copper-light);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:18px;border-bottom:2px solid var(--copper);padding-bottom:8px}
-h1.serif{font-size:48px;line-height:1.15;margin-bottom:16px}
-h1 .accent{color:var(--copper-light)}
-.hero p.lead{font-size:17px;color:#C6D4E2;max-width:480px;margin-bottom:26px}
-.stats{display:flex;gap:36px;margin-bottom:30px}
-.stat .num{font-family:Georgia,serif;font-size:34px;color:var(--copper-light)}
-.stat .lbl{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#9FB2C8}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-.doc-card{background:rgba(255,255,255,.06);border:1px solid rgba(201,138,75,.35);border-radius:14px;padding:36px;backdrop-filter:blur(4px)}
-.doc-card .mono{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--copper),var(--copper-light));color:var(--navy-deep);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:34px;font-weight:bold;margin-bottom:18px}
-.doc-card h3.serif{font-size:26px;margin-bottom:4px}
-.doc-card .creds{color:var(--copper-light);font-size:14px;font-weight:600;margin-bottom:14px}
-.doc-card p{font-size:14.5px;color:#C6D4E2}
-section{padding:64px 0}
-.section-title h2.serif{font-size:36px;margin-bottom:8px}
-.center{text-align:center}
-.section-sub{color:var(--muted);max-width:640px;margin:0 auto 40px;font-size:16px}
-.kicker{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--copper);margin-bottom:10px}
-.about{background:var(--paper)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.about-card{background:#fff;border-radius:12px;padding:34px;border-left:5px solid var(--copper);box-shadow:0 6px 20px rgba(11,34,57,.07)}
-.about-card h3.serif{font-size:22px;margin-bottom:12px}
-.about-card p{font-size:15px;color:var(--muted)}
-.about-card .quote{font-family:Georgia,serif;font-size:18px;color:var(--navy);font-style:italic}
-.spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.spec{background:var(--paper);border-radius:10px;padding:26px;border-top:3px solid var(--copper);transition:transform .2s}
-.spec:hover{transform:translateY(-4px)}
-.spec .ico{width:42px;height:42px;margin-bottom:12px}
-.spec h4{font-size:17px;margin-bottom:6px}
-.spec p{font-size:13.5px;color:var(--muted)}
-.trust{background:var(--navy);color:#fff;padding:44px 0}
-.trust-band{display:flex;justify-content:center;gap:52px;flex-wrap:wrap;text-align:center}
-.trust-item .big{font-family:Georgia,serif;font-size:26px;color:var(--copper-light)}
-.trust-item .sm{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9FB2C8;margin-top:4px}
-.contact{background:var(--paper)}
-.contact-card{background:var(--navy-deep);border-radius:14px;padding:44px;max-width:660px;margin:0 auto;text-align:center;color:#fff;border-top:5px solid var(--copper)}
-.contact-card h2.serif{margin-bottom:6px}
-.contact-card .sub{color:#9FB2C8;font-size:14px;margin-bottom:24px}
-.contact-card .big{font-size:30px;font-family:Georgia,serif;margin:10px 0}
-.contact-card a{color:#fff;text-decoration:none;font-weight:700}
-.contact-card .hrs{margin-top:20px;font-size:14px;color:#C6D4E2}
-footer{background:var(--navy-deep);color:#7E93AB;text-align:center;padding:26px 0;font-size:13px;border-top:1px solid rgba(201,138,75,.25)}
-@media(max-width:820px){
-  .hero-inner,.about-grid{grid-template-columns:1fr}
-  .spec-grid{grid-template-columns:1fr 1fr}
-  h1.serif{font-size:36px}
-  .nav-links{display:none}
-}
+:root{--navy:#182a44;--navy2:#0e1c33;--cop:#b87333;--cop2:#96601f;--ice:#f3f5f9;--ink:#1d2733;--muted:#5c6a7d;--card:#fff;--line:#dde3ec}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.65}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--navy2);color:#c9d4e4;font-size:.82rem;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none;font-weight:700}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .mark{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--navy2));display:flex;align-items:center;justify-content:center;color:var(--cop);font-weight:900;font-size:1.35rem;border:2px solid var(--cop)}
+.brand .name{font-size:1.25rem;font-weight:800;color:var(--navy);line-height:1.15}
+.brand .name small{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cop2);font-weight:700}
+.btn{display:inline-block;background:var(--cop);color:#fff;text-decoration:none;font-weight:800;padding:14px 30px;border-radius:999px}
+.btn:hover{background:var(--cop2)}
+.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy2) 100%);padding:70px 0 76px;color:#e8edf5}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(184,115,51,.5);padding:8px 16px;border-radius:999px;font-size:.88rem;font-weight:700;color:#f0d9b8}
+.badge .stars{color:var(--cop);letter-spacing:2px}
+.hero h1{font-size:2.6rem;line-height:1.18;margin:16px 0;color:#fff;letter-spacing:-.01em}
+.hero h1 .hl{color:var(--cop)}
+.hero p.lead{font-size:1.08rem;color:#b9c4d6;max-width:34em}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero .cta .ghost{color:#fff;border-color:#fff}
+.doc-card{background:#fff;border-radius:22px;padding:34px;color:var(--ink);box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.doc-card .who{display:flex;gap:18px;align-items:center;margin-bottom:14px}
+.doc-card .avatar{flex:0 0 auto;width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--cop));color:#fff;font-weight:900;font-size:1.8rem;display:flex;align-items:center;justify-content:center}
+.doc-card h3{color:var(--navy);font-size:1.4rem}
+.doc-card .cred{font-size:.88rem;color:var(--cop2);font-weight:700;margin-bottom:10px}
+.doc-card p{color:var(--muted);font-size:.95rem}
+.doc-card .exp{display:flex;gap:22px;margin-top:16px}
+.doc-card .exp b{display:block;font-size:1.6rem;color:var(--navy)}
+.doc-card .exp span{font-size:.8rem;color:var(--muted)}
+section.block{padding:60px 0}
+section.block.alt{background:var(--ice)}
+.kicker{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cop2);font-weight:800;margin-bottom:10px}
+h2{font-size:2rem;color:var(--navy);margin-bottom:8px;letter-spacing:-.01em}
+.sub{color:var(--muted);max-width:44em;margin-bottom:32px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card h3{font-size:1.15rem;color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.93rem}
+.results{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px}
+.results img{width:100%;height:auto;border-radius:16px;box-shadow:0 14px 30px rgba(24,42,68,.2)}
+.results figcaption{font-size:.8rem;color:var(--muted);margin-top:10px}
+.results h3{color:var(--navy);font-size:1.4rem;margin-bottom:10px}
+.results p{color:var(--muted)}
+.ig{background:var(--navy);color:#cfd8e6;border-radius:22px;padding:44px;display:flex;gap:28px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.ig h2{color:#fff}
+.ig p{color:#9fadc2;max-width:30em}
+.ig .handle{font-size:1.25rem;font-weight:800;color:#fff}
+.ig .stats{display:flex;gap:26px;margin:14px 0}
+.ig .stats b{display:block;font-size:1.5rem;color:var(--cop)}
+.ig .stats span{font-size:.8rem;color:#9fadc2}
+.visit{background:#fff;border:1px solid var(--line);border-radius:22px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:20px}
+.visit h2{color:var(--navy)}
+.visit p{color:var(--muted)}
+.visit a{color:var(--navy)}
+.visit .btn{margin-top:14px}
+footer{background:#0c1626;color:#8b98ad;padding:30px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:#fff}
+.demo-note{background:#f3f5f9;border-top:1px dashed var(--cop);padding:12px 0;font-size:.8rem;color:#96601f;text-align:center}
+@media(max-width:860px){.hero .wrap,.results,.visit{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero h1{font-size:2rem}.visit{padding:30px}}
 </style>
 </head>
 <body>
+<div class="topbar"><div class="wrap"><span>City Bay Centre, Hor Al Anz, Dubai &middot; Sat-Thu 9 AM - 8 PM</span><span><a href="tel:+971585221002">+971 58 522 1002</a> &middot; <a href="https://wa.me/971585221002" target="_blank" rel="noopener">WhatsApp</a></span></div></div>
+<header class="site"><div class="wrap">
+<a class="brand" href="#top"><span class="mark">OB</span><span class="name">Dr Ossama Bazzi<small>Dental Clinic</small></span></a>
+<a class="btn" href="tel:+971585221002">Book Appointment</a>
+</div></header>
 
-<header>
-  <div class="wrap nav">
-    <div class="brand">
-      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23C98A4B'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='26' font-weight='bold' text-anchor='middle' fill='%23071A2D'%3EOB%3C/text%3E%3C/svg%3E" alt="Dr Ossama Bazzi monogram">
-      <div>
-        <div class="brand-name">Dr. Ossama Bazzi</div>
-        <div class="brand-sub">Dental Clinic</div>
-      </div>
-    </div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#specialties">Specialties</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="btn" href="tel:+971585221002">Book Appointment</a>
-  </div>
-</header>
+<section class="hero" id="top"><div class="wrap">
+<div>
+<span class="badge"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 from 138 patient reviews</span>
+<h1>Twenty-one years of <span class="hl">surgical precision</span>, one trusted chair</h1>
+<p class="lead">Implantology, oral surgery, and cosmetic dentistry by Dr. Ossama Bazzi. BDS Damascus 1992. Cost-effective, holistic care with a human touch.</p>
+<div class="cta"><a class="btn" href="https://wa.me/971585221002" target="_blank" rel="noopener">WhatsApp Us</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Dr+Ossama+Bazzi+Dental+Clinic+City+Bay+Centre+Dubai" target="_blank" rel="noopener">Find the Clinic</a></div>
+</div>
+<div class="doc-card">
+<div class="who"><span class="avatar">OB</span><div><h3>Dr. Ossama Bazzi</h3><div class="cred">BDS, Damascus University (1992)</div></div></div>
+<p>Dentist, Oral &amp; Maxillofacial Surgeon, Pediatric and Restorative Dentist. "We strive to provide highest quality of cost effective, holistic dental care to our patients with a human touch."</p>
+<div class="exp"><div><b>21</b><span>years experience</span></div><div><b>4.9</b><span>Google rating</span></div><div><b>138</b><span>patient reviews</span></div></div>
+</div>
+</div></section>
 
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div>
-      <span class="eyebrow">Dentist &middot; Oral &amp; Maxillofacial Surgeon</span>
-      <h1 class="serif">Twenty-one years of <span class="accent">dental excellence</span>, one personal clinic.</h1>
-      <p class="lead">Dr. Ossama Bazzi brings senior surgical experience and modern equipment to every branch of dentistry, delivered with a human touch in Hor Al Anz, Dubai.</p>
-      <div class="stats">
-        <div class="stat"><div class="num">21</div><div class="lbl">Years Experience</div></div>
-        <div class="stat"><div class="num">4.9&#9733;</div><div class="lbl">138 Google Reviews</div></div>
-        <div class="stat"><div class="num">1992</div><div class="lbl">BDS, Damascus Univ.</div></div>
-      </div>
-      <div class="hero-cta">
-        <a class="btn" href="tel:+971585221002">Call +971 58 522 1002</a>
-        <a class="btn-outline" href="#specialties">View Specialties</a>
-      </div>
-    </div>
-    <div class="doc-card">
-      <div class="mono">OB</div>
-      <h3 class="serif">Dr. Ossama Bazzi</h3>
-      <div class="creds">BDS (Damascus University, 1992) &middot; Medical Registration Verified</div>
-      <p>Dentist, Oral and Maxillofacial Surgeon, Pediatric Dentist, and Restorative Dentist. Practicing holistic, cost-effective dentistry with all modern equipment and facilities for every dental procedure.</p>
-    </div>
-  </div>
-</section>
+<section class="block"><div class="wrap">
+<div class="kicker">Specialties</div>
+<h2>Every branch of dentistry, one roof</h2>
+<p class="sub">Modern equipment and facilities for every dental procedure, for patients of all ages.</p>
+<div class="cards">
+<div class="card"><h3>Implantology</h3><p>Permanent tooth replacement planned and placed by a maxillofacial surgeon.</p></div>
+<div class="card"><h3>Oral &amp; Maxillofacial Surgery</h3><p>Surgical extractions and corrective procedures with 21 years of hands behind them.</p></div>
+<div class="card"><h3>Cosmetic Dentistry</h3><p>Porcelain bridges, veneers, and smile design for natural-looking results.</p></div>
+<div class="card"><h3>Orthodontics</h3><p>Braces and alignment for teens and adults.</p></div>
+<div class="card"><h3>Endodontics</h3><p>Root canal treatment that saves the tooth and ends the pain.</p></div>
+<div class="card"><h3>Pediatric Dentistry</h3><p>Gentle care for young smiles, plus sedation dentistry when needed.</p></div>
+</div>
+</div></section>
 
-<section id="about" class="about">
-  <div class="wrap">
-    <div class="kicker center">Our Practice</div>
-    <div class="section-title center"><h2 class="serif">Care with a human touch</h2></div>
-    <p class="section-sub">A multi-disciplinary practice combining rigorous training, education, and the latest technology.</p>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3 class="serif">In the clinic's own words</h3>
-        <p class="quote">&ldquo;We strive to provide highest quality of cost effective, holistic dental care to our patients with a human touch. We have all the modern equipment's with facilities for every branch of Dentistry and for all Dental procedures.&rdquo;</p>
-      </div>
-      <div class="about-card">
-        <h3 class="serif">Why patients trust us</h3>
-        <p>Warm and friendly staff are a reason why patients look forward to their dental appointments and always walk out with a smile. Insurance accepted. Cash and card payments welcome.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block alt"><div class="wrap">
+<div class="kicker">Real results</div>
+<h2>From the clinic's own page</h2>
+<p class="sub" style="margin-bottom:24px">Actual patient results shared by the clinic.</p>
+<div class="results">
+<figure><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCADHAMgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDab71Rsf71OZqY4rE67leV6hFSOMtSogoKGBflqlOmWNaxTNU7hPmwtRcLmS9qGphswtaBQjtSeWTQJsqpEiU7d/dFT/ZzupPK/u0CuVSpNNMRPrVzyse9Jt9qaAzpLbNSRWwFXWi9qFQ/Wgq7Io7f2qzHbe1WYIM9qvR2+F6UhFKG39qnFuKsEIvfpSq4/iOaQWZEsdOESH0qQEdaeBQTaxFsX0p6jFOK4obPB9aAuNaoWWpeTTXx/EMH19qBplZ0xzRUkn3aKCrlgio5W7YJ96eOe9MkrXoQRbM1KqAUItSrxWbYxoTEdV5o881cPNMKZpCuVBB3pRCKu7flprJQLcpmKm+RVsqBzUbHGNvFBSREtt78U9bZD92kYj+HJB9aar7e3600mXYlNpGe9OjsYx71W88jtTluTRYfKy2GSLt0qB7kj7v/AOuoJ58t/hVctT5R2SLDPu5pu40gNOGGwafKhXsODmlEhHfFRS8Y+ppiuB/9elyoVy3HdEcN0rQhngeL5OGwc7j96sPzAWpRIRytO1iWkzV3Dd8tRTOAuWqKObzY/cdaScFo6W5m9ByOJaKq2SuN278qKTiNS0Lqn5qdjNNUU4HtVdBkiCnjj8KaDhaUP7VLABQoxmimtJtpC3Hsagkn7LUclwTwOlQOwVqErlxj3JWc+tRkHb81IH6URud3U1aQ9R4SmlPm6U4jd2GT6VEX+YCqsCY11x7Uik/5xR5oOfrSFgrduadiri7ct/8AXpW4xx0xULy/7dM8/wCUCmGrLGfm9KVXyuM1TMueM4pjShfu0gsXXbNQ/wCRVeS5A+9+VMacbfm6+lAWLW/5vWlWQbfrVUy5UCkMv5L0+tFiS7FJskz271ohs9qxom+atOB/3Y9qhqxnIlOKKRu1FSIlBpy0gFC0yh5oHHrQxpu6kA8tVO6l+YCppJNqk1mSSfvD70LUIrqWV5X5ev8AOoHfH3qjabHfj+RqBrj5s5LfWrsaK5ZL/N8vGadvP8XbvWeZvx9qdG7ythPvY6f1qkgfmXzcY9Kry3Henpp08v3+Km0nTHlvZUl5VAMVXKzN1YRKm8t9wHmo5fMGBKCPSu2XSoIcbMNkA9MfUGqupaYk0DbR82Mr9ark8zP6zrojlIEM2URCT3q2NMlK1t6JYIttvYAk4rU+zj0qlBETxEr6HntzDNDL5bZ8z9CO2P1rQs9NkePMvJre1PTkaaGXHRsH6VfhtsR9KVlcl1m1ucLqVnNBONnRqjeynC78Z+ldfqFkjSRluzf0psluPJ6dqHFMaryRw/mlGw3FPElQayPIkaboGfFVILntWbjY6YzUkblvJWtat8tc9bP83Xitm1apYmjSFFMU0VmTYsrSgYpBUg+7SKZGaQtRIM0zpQIgvG+XFZkz/NV67fPesW8kx3q0XFCyzVCHJqo8pPer2jgXLHvjitIx5mOU1BGnp9h5qh25rVtNNCXucdV/rT9KTyv3bfUfStGaSG38uSVwgLhAT6k4ArZJJWOKdSUndlmGBF7cf0p9hbBbmQ46gVNEBU0RRJxyPmHFDMicwimyQArVjcKRnG3rSCxn2Nv5cJTHRiP14q15OKqW2o2rXd1Asqb4XAcZHUrn/P0qaXUbVFJeWNQOpLDigLMbdwAxn86cEG2s/U9R8+ymjsfmmdCqNyApI65rA+3eJYpIoHezO4f6zYe3XjjNA1G5uatJDBCplcLukCjPHJ7VSvpRFbMfbj61Rv8AQJdYjU6hdyyOnKrgKgPrtrNvbC4a28jz5MxdBuPWncaSOa8XzBY44e5OaxraXco3dadrkcnn75Xdj93ntUlpauVXaOtRI3pp30LUE0gYBea6KwM20VU0yw8psuOa3reICsZM6UrLUmQ/KKKmCALRWdzMetSlgKiDfLRmpuVYVueahl+9T2bHemMCzZpphYzrw4zWDeTJu610V3CXz2rldUsJxIzxZNaRaKV0tDPv70JGdvXt9aXQdVmguYhFD5hPDDOMis67tpjzg5HatfwrEiebPLxjito6HNUcm9Ts9Olv7m9E2EjhQfc6lz9e1S32k3mvXax3NwIraLkJEO/r71b0kobRZF/j5rZ0bBVn9TVXMXoZdxpuqwW2y21W4+Uf8tApP54zV220GGKWO7eSeS5XpI8jE9K17t08gjA6Hn1ptjOk9tG+eq1Wgruxn3z3SyReVO6rvweByMUxo5m+9NIfxq7qWxId7diDRHsZeoo0FqZFrZItzPtQfNhunt/9arUlmDG/HUGgXCJqJ91H86sXNzGsZPtSuirNjNPhHkxn2FGohFaE/wC2P5VUsdQRYPnIGKparfeftET/AHWzUuasWqMm9jpYSnl1hasUt7kP/C/FQprJSIDZuOPpWffXsl7jcgwOal1FY0jhp31Rh6xpcN1emTP7rIO0dzSw2iBvlTpV9oTT0j//AF1k5NnXCmoISBNvfHtV21PzVWRNv3qsQHP3elImTLbNlaKZj3oqDIFp+ahQ1KPu1JRE1Pjb+9TXpqnbSGSTqDGTWbNEj1ok5qoy4b5hVJlwdjKaxh3ZcZH0pVtIx9yPk9sVoSIP4aauKtGujGwSyRR7EcqPTsK1NN1CSyhEf38Z579azlVKsrjp29fWqTZDpQfQ0p9VM8ZCjaTUNhfPaRlPvDOR2+v9aqLgsN3Eee3J/KnAAse2TRzSF7GG1i3danJcLs2dajjv5FXC00pGkec5pkLB2P48A4o5pdxqnTtsRvcSGbOzczfXI+lPdp2+9TmcJuj3/wDfPOD9aUTJ6/Xjk0ajUYrZFcQuW+alNsV+/U7Tbtoc8Y4/2T9KrPcOW+alYtSY4qi8YqIkfw4qNpaiMnfPSnYLlhiCtMUkNUP2gGjz0PenoZtlhRhantB37VSjky3qK04FwtS2ZSZKRRRRU2IKsTVOrVTRqsRvUtFEjDOajalzRn5c1IwHNJMmfwoFKWzQPYpsSGxTCwq1KgNQGOqTsaKSI9xpRL/epCMcUwrV3LTLKvQOe+PpVcL1p6ZouMtHlf8AOKRRt759h/KoSxoD470XETBfypN4Ciq8k6KvWoU865k8q2R5JP7qjP5+lNMlu25NLcge1VZbsf561uWXhaSXD6hNj/pnFyfxb/Cty00y1sv+PaCOP/axlj+PWrUWzGeIjHRanFRafqV1zDZzYP8AEw2D8zir9v4W1KVf301vCPqXNdjt9809RVcqOeWJm9jmYvCMY/1t3M/+6oA/rUv/AAilr/fuP++x/hXTAUYp8qM/azfU5lPDOxspKcD+8ATUr6XPH90hvboa6LbUUnMgGMrjr2FLkTD2r6nLuro2xxtI7GiugvLNLiPDdf4W7rRU8hoqqtqchMnlTEU5DVu7i3/WqI44apqQ5WXCV0Wuq0zO1aVTQ/FY2NLjCKVTj71LjK0xqBi7qMDbTd1GaBjfL79ajZKkL4ajdTGpNFV947U1pX9KuKpdgiAsfQCrMWkTzffxGvv1/KmlcTq2MRp5BU9tZ6lft/o1u+P754X8zXU2ek2lvh/JDt/ek5x9B0FaWT0z9KuMO5jKu+hztj4Q+YPqN1u/6Zw8D8WrpLW1gs4vJtoEjjHYD+frTlz6/WpRmtUkjnlOUt2IQaYUFS4pvy1SIuM20q0vv2pM07CuSqaWow1Lmiwx+cLTTSFqYxosAZoppaiiwHPNVO4h/jXrVvNMYgVU4pqxtF2dyoj4+9UjfNSSplspTFNcco2ZvGVx2Nv3aR6dn+9Tgm77vNQWQFe9Jir8VhPN22qe7f4VoWmkxLy58w/kPyq1FsiVRRMWK0lnb5EJHr2/OtG30eMf8fBLH+6OB/8AXraEYVcKKQfpVqCRk6rexBFbJCuEQL7AYqZUp59Kb7VSRne4dPu1IHH8QqM+tKDVEsk2xnO3g0m2RG/vCmumV+Q5pm+RPw6iqsSyYzbfvUM+V+tRrMG4YUpUFflp2JHg/LikzQM7aMUwEJpd1R7qXNOwD99NL0mKaRQMHaimO2KKAMBnqF2p1tb3Eq9MJ6mrcdgBzL83t0FHOrGuxnhz/DyfbmrVtZyT8t+7Hv8A4VpwxRrxsC1aS33LlDkVlK0hqVtiG2023T748w/7X+FXkSHooC/hUW7b9KfjdH8lJJIlybHuntTdm3letLbyb1+bqODUvWqsTcbuyvzcGogP/r1IRim+9FguH8P04pNuf6UL/rMetJQFwPP86bn8qVvvU1x83607ACZDfSniT+/Ue7oaXaGzt60xDzGjcrQEK1HsdWB/OpVf+9VEgr0u6nYQ0wqaBDG+9SZpGFNNOwDw9NZ6aSFUljgDqT0FZlzcmf5IciPue7f4Um0jSMXImnufNbYnTufX6UVRvJhYWEk/cD5c+tFZ6vU0uo6Goq4p+PlpaXFTYQwrToZHhbK9O4pwA/iOKaQP7/6U7ElvAuF3p+VMjHlSDd3qNA8MgKfd71YyG5WrSJbFlTZJ5i9D97/Gnq1IH7N0NNK7eO3anYkkIzUR44pwanY3fWiwETfd+lBPQ0H5eGpD/q6Vhg4/xppGV+lOHKj8jQOKdgImGPxpU4wacEz96nIlMB4IpdgNJtowadhMaUNJ84qUMaSTCrvlIQep/p60AlfYhaoLm4jtl/e/ePRB1P8AhTLi+xxbD/gbD+Qqg0ZlbLZJPU96iU0tjaFFvWQyaaW6b5uFHRR0H+NTQQdKlggrYsrLH7xh9BUK8mayagihNpMN1GqXKblHO33oraK0VvZHnSk27mNijNFFYI6w96G5WiiqEKTuUUkEhjkH909aKKZBekA6ihDvjwe1FFMRGfkanq43UUUwBxlqaV+X8aKKBjQMLTxGSooooAk2YWkxRRQINtOCAAs5wo6nrRRTBFSS9PC267c9GPJqm4aRtzsWPvRRWMmztjBR2ARVNFB81FFQNmrZaeow8n4CtHZRRW8NjgqSbepG8YoooqzI/9k=" alt="Smile result from Dr Ossama Bazzi Dental Clinic"><figcaption>Patient smile result, via the clinic's Facebook page</figcaption></figure>
+<div>
+<h3>Proof, not promises</h3>
+<p>Porcelain work and cosmetic cases that patients show off themselves. Book a consultation and see what is possible for your smile. Insurance accepted, card payments welcome, wheelchair accessible.</p>
+<p style="margin-top:14px"><a class="btn" href="https://wa.me/971585221002" target="_blank" rel="noopener">Ask on WhatsApp</a></p>
+</div>
+</div>
+</div></section>
 
-<section id="specialties">
-  <div class="wrap">
-    <div class="kicker center">Full Scope of Care</div>
-    <div class="section-title center"><h2 class="serif">Every specialty, one clinic</h2></div>
-    <p class="section-sub">Comprehensive dental services and solutions under one roof.</p>
-    <div class="spec-grid">
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%230B2239'/%3E%3Cpath d='M21 8c-5 0-8 4-8 8 0 5 3 7 3 13 0 3 2 6 3 6 2 0 1-5 2-9 1 4 0 9 2 9 1 0 3-3 3-6 0-6 3-8 3-13 0-4-3-8-8-8z' fill='%23fff'/%3E%3C/svg%3E" alt="">
-        <h4>Implantology</h4><p>Permanent, natural-feeling tooth replacement by an experienced surgeon.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%23C98A4B'/%3E%3Cpath d='M14 30c4-6 10-6 14 0l3-14c-6-4-14-4-20 0z' fill='%23fff'/%3E%3C/svg%3E" alt="">
-        <h4>Cosmetic Dentistry</h4><p>Smile design, porcelain bridges, and aesthetic restorations.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%230B2239'/%3E%3Cpath d='M12 28c6-8 12-8 18 0' stroke='%23fff' stroke-width='3' fill='none'/%3E%3Cpath d='M12 22c6-8 12-8 18 0' stroke='%23C98A4B' stroke-width='3' fill='none'/%3E%3C/svg%3E" alt="">
-        <h4>Orthodontics</h4><p>Teeth straightening and bite correction for teens and adults.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%23C98A4B'/%3E%3Ccircle cx='21' cy='21' r='8' fill='none' stroke='%23fff' stroke-width='3'/%3E%3Cpath d='M21 13v-5M21 34v-5M13 21h-5M34 21h-5' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E" alt="">
-        <h4>Oral &amp; Maxillofacial Surgery</h4><p>Surgical extractions, TMJ disorder treatment, complex cases.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%230B2239'/%3E%3Ccircle cx='21' cy='17' r='6' fill='%23fff'/%3E%3Cpath d='M11 34c2-7 6-10 10-10s8 3 10 10' fill='%23fff'/%3E%3C/svg%3E" alt="">
-        <h4>Pediatric Dentistry</h4><p>Gentle, friendly dental care that kids actually look forward to.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%23C98A4B'/%3E%3Cpath d='M13 27l6 6 10-13' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E" alt="">
-        <h4>Periodontics &amp; Endodontics</h4><p>Gum disease treatment and root canal therapy, done right.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%230B2239'/%3E%3Cpath d='M14 14h14v14H14z' fill='none' stroke='%23fff' stroke-width='3'/%3E%3Cpath d='M21 10v-3M21 35v-3M10 21H7M35 21h-3' stroke='%23C98A4B' stroke-width='3'/%3E%3C/svg%3E" alt="">
-        <h4>Prosthodontics</h4><p>Immediate dentures, crowns, and full-mouth rehabilitation.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%23C98A4B'/%3E%3Cpath d='M21 8c-8 0-13 5-13 12 0 8 6 14 13 14s13-6 13-14c0-7-5-12-13-12z' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E" alt="">
-        <h4>Sedation &amp; Hygiene</h4><p>Anxiety-free sedation dentistry and preventive hygiene care.</p>
-      </div>
-      <div class="spec">
-        <img class="ico" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' rx='9' fill='%230B2239'/%3E%3Cpath d='M21 10l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z' fill='%23C98A4B'/%3E%3C/svg%3E" alt="">
-        <h4>Affordable Quality</h4><p>Cost-effective treatments with insurance accepted. Cash and card welcome.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block"><div class="wrap">
+<div class="ig">
+<div>
+<div class="kicker" style="color:#b87333">Follow us</div>
+<h2>Cases and clinic updates</h2>
+<p>Treatment results and announcements from Hor Al Anz.</p>
+<div class="stats"><div><b>43</b><span>posts</span></div><div><b>307</b><span>followers</span></div></div>
+<p class="handle">@drossamabazzidentalclinic</p>
+</div>
+<a class="btn" href="https://www.instagram.com/drossamabazzidentalclinic/" target="_blank" rel="noopener">Follow on Instagram</a>
+</div>
 
-<section class="trust">
-  <div class="wrap trust-band">
-    <div class="trust-item"><div class="big">4.9 &#9733;</div><div class="sm">138 Google Reviews</div></div>
-    <div class="trust-item"><div class="big">21 Years</div><div class="sm">Clinical Experience</div></div>
-    <div class="trust-item"><div class="big">BDS 1992</div><div class="sm">Damascus University</div></div>
-    <div class="trust-item"><div class="big">Yes</div><div class="sm">Insurance Accepted</div></div>
-  </div>
-</section>
+<div class="visit">
+<div>
+<div class="kicker">Visit us</div>
+<h2>Find us in Hor Al Anz</h2>
+<p><strong>Dr Ossama Bazzi Dental Clinic</strong><br>Office 313, 3rd Floor, City Bay Centre<br>Abu Hail Road, Hor Al Anz, Dubai, UAE</p>
+<p style="margin-top:12px">Saturday - Thursday: 9:00 AM - 8:00 PM<br>Friday: closed</p>
+</div>
+<div>
+<h2>Book your visit</h2>
+<p>Call, WhatsApp, or email the clinic directly.</p>
+<p style="font-size:1.2rem;font-weight:800;margin-top:8px"><a href="tel:+971585221002">+971 58 522 1002</a><br><a href="tel:+97142977566">04-2977566</a></p>
+<p><a href="mailto:ossamabazzi@gmail.com">ossamabazzi@gmail.com</a></p>
+<a class="btn" href="https://wa.me/971585221002" target="_blank" rel="noopener">WhatsApp Us</a><br>
+<a class="btn ghost" style="margin-top:10px" href="https://www.google.com/maps/search/?api=1&query=Dr+Ossama+Bazzi+Dental+Clinic+City+Bay+Centre+Dubai" target="_blank" rel="noopener">Get Directions</a>
+</div>
+</div>
+</div></section>
 
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="kicker center">Visit Us</div>
-    <div class="section-title center"><h2 class="serif">Book your appointment</h2></div>
-    <p class="section-sub">Call today. Walk out smiling.</p>
-    <div class="contact-card">
-      <h2 class="serif">Dr. Ossama Bazzi Dental Clinic</h2>
-      <div class="sub">Office 313, 3rd Floor, City Bay Centre, Abu Hail Road, Hor Al Anz, Dubai</div>
-      <div class="big"><a href="tel:+971585221002">+971 58 522 1002</a></div>
-      <div><a href="tel:+97142977566">04-2977566</a></div>
-      <div class="hrs">Saturday - Thursday, 9:00 AM - 8:00 PM &middot; Friday closed</div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">Dr. Ossama Bazzi Dental Clinic &middot; Hor Al Anz, Dubai &middot; Demo website mockup</div>
-</footer>
-
+<footer><div class="wrap">
+<span><strong style="color:#fff">Dr Ossama Bazzi Dental Clinic</strong> &middot; City Bay Centre, Hor Al Anz, Dubai</span>
+<span><a href="tel:+971585221002">+971 58 522 1002</a> &middot; <a href="mailto:ossamabazzi@gmail.com">ossamabazzi@gmail.com</a></span>
+</div></footer>
+<div class="demo-note">Demo website preview prepared by Sathvik, freelance web designer.</div>
 </body>
 </html>
