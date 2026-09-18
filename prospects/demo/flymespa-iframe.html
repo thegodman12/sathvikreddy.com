@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#102842" />
+  <link rel="icon" href="data:," />
+  <title>Fly Me Spa — Beautiful Girls Airport</title>
+  <meta name="description" content="Fly Me Spa in Muwaileh Commercial, Sharjah — city-inspired hair, nail, brow and hammam treatments, open daily." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;600&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f3fbff;
+      --paper: #ffffff;
+      --paper-2: #eaf8ff;
+      --ink: #102842;
+      --muted: #50677c;
+      --line: #c9e2ee;
+      --sky: #5dc8ed;
+      --sky-deep: #128dbb;
+      --pink: #f179a5;
+      --pink-soft: #ffe0eb;
+      --yellow: #ffd45f;
+      --navy: #102842;
+      --navy-2: #173c60;
+      --white: #ffffff;
+      --success: #087860;
+      --shadow: 0 28px 80px rgba(27, 93, 125, .16);
+      --shadow-small: 0 12px 34px rgba(27, 93, 125, .12);
+      --radius-large: 30px;
+      --radius: 18px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #091827;
+        --paper: #10263a;
+        --paper-2: #0d2133;
+        --ink: #edf9ff;
+        --muted: #b7cede;
+        --line: #294d66;
+        --sky: #6bd4f4;
+        --sky-deep: #4ec2e8;
+        --pink: #ff8bb5;
+        --pink-soft: #4a263b;
+        --yellow: #ffda76;
+        --navy: #071522;
+        --navy-2: #0f2c43;
+        --white: #ffffff;
+        --success: #75e0c7;
+        --shadow: 0 28px 80px rgba(0, 0, 0, .34);
+        --shadow-small: 0 12px 34px rgba(0, 0, 0, .28);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Nunito Sans", sans-serif;
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      z-index: -2;
+      inset: 0;
+      background:
+        radial-gradient(circle at 10% 8%, color-mix(in srgb, var(--sky) 18%, transparent), transparent 30%),
+        radial-gradient(circle at 92% 30%, color-mix(in srgb, var(--pink) 12%, transparent), transparent 25%),
+        linear-gradient(var(--bg), var(--bg));
+      pointer-events: none;
+    }
+    button, input, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: "Bricolage Grotesque", sans-serif; line-height: 1.02; }
+    .shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+    .announcement {
+      min-height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 8px 18px;
+      color: var(--navy);
+      background: var(--yellow);
+      font-family: "Azeret Mono", monospace;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      text-align: center;
+    }
+    .announcement b { font-family: "Nunito Sans", sans-serif; font-size: .77rem; letter-spacing: 0; }
+    header {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-size: 1.34rem;
+      font-weight: 800;
+      letter-spacing: -.035em;
+      white-space: nowrap;
+    }
+    .wordmark-plane {
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      background: var(--pink);
+      box-shadow: 0 7px 18px color-mix(in srgb, var(--pink) 30%, transparent);
+      transform: rotate(-11deg);
+    }
+    .wordmark-plane svg { width: 18px; }
+    nav { display: flex; align-items: center; gap: 25px; }
+    nav a { text-decoration: none; font-size: .84rem; font-weight: 800; }
+    nav a:not(.button) { position: relative; }
+    nav a:not(.button)::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 100%;
+      bottom: -7px;
+      background: var(--pink);
+      transition: right .25s ease;
+    }
+    nav a:not(.button):hover::after { right: 0; }
+    .button {
+      min-height: 48px;
+      padding: 0 20px;
+      border: 0;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      background: var(--pink);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 9px 24px color-mix(in srgb, var(--pink) 26%, transparent);
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 14px 30px color-mix(in srgb, var(--pink) 32%, transparent); }
+    .button:active { transform: translateY(0); }
+    .button.secondary { background: var(--navy); box-shadow: 0 9px 24px rgba(16, 40, 66, .2); }
+    .button.ghost { color: var(--ink); background: transparent; border: 1px solid var(--line); box-shadow: none; }
+    .button.ghost:hover { border-color: var(--sky-deep); color: var(--sky-deep); }
+    .button svg { width: 17px; height: 17px; }
+    .hero-wrap { padding: 14px 0 48px; }
+    .hero {
+      position: relative;
+      min-height: 650px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      overflow: hidden;
+      border-radius: var(--radius-large);
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+    .hero::before, .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .hero::before { width: 520px; height: 520px; right: -190px; top: -210px; background: rgba(93, 200, 237, .19); }
+    .hero::after { width: 280px; height: 280px; left: 38%; bottom: -170px; background: rgba(241, 121, 165, .24); }
+    .hero-copy {
+      padding: clamp(58px, 8vw, 98px) clamp(34px, 6vw, 78px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 999px;
+      color: rgba(255,255,255,.83);
+      font-family: "Azeret Mono", monospace;
+      font-size: .67rem;
+      font-weight: 600;
+      letter-spacing: .035em;
+    }
+    .kicker-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--yellow); box-shadow: 0 0 0 5px rgba(255,212,95,.13); }
+    h1 { max-width: 720px; font-size: clamp(3.35rem, 7vw, 6.85rem); letter-spacing: -.07em; margin: 23px 0 24px; }
+    h1 .sky { color: var(--sky); }
+    .hero-copy > p { max-width: 540px; color: rgba(255,255,255,.76); font-size: 1.06rem; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 21px; }
+    .hero .button.ghost { color: var(--white); border-color: rgba(255,255,255,.27); }
+    .hero .button.ghost:hover { color: var(--sky); border-color: var(--sky); }
+    .hero-visual {
+      position: relative;
+      min-height: 650px;
+      display: grid;
+      place-items: center;
+      padding: 54px 46px 54px 18px;
+    }
+    .flight-line {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .8;
+      pointer-events: none;
+    }
+    .flight-line path { fill: none; stroke: rgba(255,255,255,.2); stroke-width: 1.5; stroke-dasharray: 7 8; }
+    .flight-plane { transform-origin: center; animation: fly 7s ease-in-out infinite; }
+    .boarding-pass {
+      position: relative;
+      width: min(450px, 100%);
+      padding: 28px;
+      border-radius: 24px;
+      color: var(--ink);
+      background: var(--paper);
+      box-shadow: 0 26px 70px rgba(0,0,0,.24);
+      transform: rotate(2.2deg);
+      transition: transform .45s cubic-bezier(.2,.8,.2,1);
+    }
+    .hero:hover .boarding-pass { transform: rotate(.3deg) translateY(-5px); }
+    .boarding-pass::before, .boarding-pass::after {
+      content: "";
+      position: absolute;
+      top: 46%;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--navy);
+    }
+    .boarding-pass::before { left: -13px; }
+    .boarding-pass::after { right: -13px; }
+    .pass-head { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; }
+    .pass-brand { font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; letter-spacing: -.03em; }
+    .pass-class { font-family: "Azeret Mono", monospace; color: var(--pink); font-size: .63rem; font-weight: 600; }
+    .route { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; margin: 29px 0 24px; }
+    .route-code { font-family: "Bricolage Grotesque", sans-serif; font-size: 2.15rem; line-height: 1; font-weight: 800; letter-spacing: -.05em; }
+    .route-code small { display: block; margin-top: 7px; color: var(--muted); font-family: "Nunito Sans", sans-serif; font-size: .6rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .route-line { height: 1px; background: var(--line); position: relative; }
+    .route-line::before { content: "✈"; position: absolute; left: 45%; top: 50%; transform: translate(-50%,-50%) rotate(5deg); padding: 5px; color: var(--sky-deep); background: var(--paper); }
+    .pass-detail { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; padding-top: 22px; border-top: 1px dashed var(--line); }
+    .pass-detail span { display: block; color: var(--muted); font-family: "Azeret Mono", monospace; font-size: .55rem; margin-bottom: 4px; }
+    .pass-detail strong { font-size: .8rem; }
+    .nail-window {
+      position: absolute;
+      right: -14px;
+      bottom: -108px;
+      width: 220px;
+      border: 8px solid rgba(255,255,255,.96);
+      border-radius: 110px 110px 22px 22px;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,.25);
+      transform: rotate(-5deg);
+    }
+    .nail-window img { width: 100%; aspect-ratio: 1 / 1.12; object-fit: cover; }
+    .nail-caption { position: absolute; left: 12px; bottom: 10px; right: 12px; padding: 8px 10px; border-radius: 8px; background: rgba(16,40,66,.84); color: #fff; font-size: .64rem; font-weight: 800; backdrop-filter: blur(6px); }
+    .cloud { position: absolute; width: 92px; height: 30px; border-radius: 999px; background: rgba(255,255,255,.11); }
+    .cloud::before, .cloud::after { content: ""; position: absolute; bottom: 0; border-radius: 50%; background: inherit; }
+    .cloud::before { width: 45px; height: 45px; left: 12px; }
+    .cloud::after { width: 35px; height: 35px; right: 12px; }
+    .cloud.one { top: 13%; right: 9%; }
+    .cloud.two { bottom: 15%; left: 5%; transform: scale(.75); }
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      box-shadow: var(--shadow-small);
+      overflow: hidden;
+    }
+    .trust-item { padding: 22px 24px; border-right: 1px solid var(--line); }
+    .trust-item:last-child { border-right: 0; }
+    .trust-item strong { display: block; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.32rem; letter-spacing: -.04em; }
+    .trust-item span { color: var(--muted); font-size: .76rem; }
+    section { padding: 104px 0; }
+    .section-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); gap: 48px; align-items: end; margin-bottom: 42px; }
+    .eyebrow { display: block; margin-bottom: 13px; color: var(--sky-deep); font-family: "Azeret Mono", monospace; font-size: .68rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+    h2 { font-size: clamp(2.65rem, 5vw, 4.65rem); letter-spacing: -.06em; margin-bottom: 0; }
+    .section-head p { max-width: 470px; margin: 0 0 8px auto; color: var(--muted); }
+    .offers-section { position: relative; }
+    .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .offer-card {
+      position: relative;
+      min-height: 420px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      overflow: hidden;
+      border-radius: 24px;
+      background: var(--paper);
+      box-shadow: var(--shadow-small);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .offer-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .offer-card.featured { background: var(--pink); color: #fff; }
+    .offer-copy { padding: clamp(28px, 4vw, 45px); display: flex; flex-direction: column; }
+    .offer-badge { width: fit-content; margin-bottom: 26px; padding: 6px 10px; border-radius: 999px; background: var(--yellow); color: var(--navy); font-family: "Azeret Mono", monospace; font-size: .6rem; font-weight: 600; }
+    .offer-card.featured .offer-badge { background: #fff; }
+    .offer-price { margin-bottom: 4px; font-family: "Bricolage Grotesque", sans-serif; font-size: clamp(3.6rem, 6vw, 5.6rem); line-height: .9; font-weight: 800; letter-spacing: -.07em; }
+    .offer-price sup { font-size: .9rem; vertical-align: top; letter-spacing: 0; }
+    .offer-copy h3 { margin: 16px 0 14px; font-size: 1.55rem; }
+    .offer-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 28px; padding: 0; list-style: none; }
+    .offer-list li { padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; font-size: .7rem; font-weight: 700; }
+    .featured .offer-list li { border-color: rgba(255,255,255,.35); }
+    .offer-copy .offer-action { margin-top: auto; align-self: flex-start; }
+    .offer-card.featured .offer-action { background: var(--navy); }
+    .promo-proof { width: 156px; padding: 18px 18px 18px 0; display: flex; align-items: center; }
+    .promo-proof figure { margin: 0; position: relative; }
+    .promo-proof img { width: 129px; border-radius: 10px; box-shadow: 0 13px 30px rgba(0,0,0,.2); }
+    .promo-proof figcaption { margin-top: 8px; font-size: .58rem; color: rgba(255,255,255,.76); line-height: 1.3; }
+    .stamp { position: absolute; right: 18px; top: 20px; width: 58px; height: 58px; display: grid; place-items: center; border: 1px dashed currentColor; border-radius: 50%; font-family: "Azeret Mono", monospace; font-size: .53rem; font-weight: 600; text-align: center; transform: rotate(9deg); opacity: .74; }
+    .destinations { background: var(--paper); }
+    .destination-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .destination {
+      position: relative;
+      min-height: 390px;
+      padding: 26px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--paper-2);
+      transition: transform .3s ease, border-color .3s ease;
+      isolation: isolate;
+    }
+    .destination:hover { transform: translateY(-6px); border-color: var(--sky-deep); }
+    .destination::before { content: ""; position: absolute; inset: auto -25% -18% -25%; height: 58%; border-radius: 50% 50% 0 0; z-index: -1; opacity: .95; transition: transform .4s ease; }
+    .destination:hover::before { transform: translateY(-10px); }
+    .destination.marrakech::before { background: #d9866b; }
+    .destination.tokyo::before { background: #ef9bb9; }
+    .destination.london::before { background: #61b8dc; }
+    .destination.roma::before { background: #f1c760; }
+    .city-code { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-family: "Azeret Mono", monospace; font-size: .63rem; }
+    .city-icon { width: 56px; height: 56px; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent); border-radius: 50%; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.25rem; font-weight: 800; }
+    .destination h3 { margin: 0 0 8px; font-size: 2rem; letter-spacing: -.04em; }
+    .destination p { max-width: 195px; margin: 0 0 70px; color: var(--muted); font-size: .82rem; }
+    .destination .service-name { position: absolute; left: 26px; bottom: 23px; color: #102842; font-weight: 900; }
+    .service-menu { display: grid; grid-template-columns: .78fr 1.22fr; gap: 70px; align-items: start; }
+    .menu-intro { position: sticky; top: 40px; }
+    .menu-intro h2 { margin-bottom: 22px; }
+    .menu-intro p { color: var(--muted); max-width: 390px; }
+    .menu-list { border-top: 1px solid var(--line); }
+    .menu-row { display: grid; grid-template-columns: 1fr auto auto; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .menu-row strong { display: block; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.05rem; }
+    .menu-row small { color: var(--muted); }
+    .menu-price { color: var(--pink); font-family: "Azeret Mono", monospace; font-size: .74rem; font-weight: 600; white-space: nowrap; }
+    .mini-book { min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: transparent; font-size: .7rem; font-weight: 800; cursor: pointer; transition: border-color .2s ease, background .2s ease, color .2s ease; }
+    .mini-book:hover { border-color: var(--pink); background: var(--pink); color: #fff; }
+    .social-proof {
+      overflow: hidden;
+      background: var(--navy);
+      color: var(--white);
+    }
+    .social-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: center; }
+    .social-copy h2 { margin: 14px 0 20px; }
+    .social-copy p { color: rgba(255,255,255,.7); max-width: 510px; }
+    .social-copy .eyebrow { color: var(--sky); }
+    .social-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 26px; }
+    .social-links a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 13px; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; text-decoration: none; font-size: .73rem; font-weight: 800; transition: border-color .2s ease, color .2s ease; }
+    .social-links a:hover { border-color: var(--sky); color: var(--sky); }
+    .social-mosaic { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; align-items: end; }
+    .result-card { overflow: hidden; border-radius: 22px; background: var(--paper); color: var(--ink); box-shadow: 0 20px 50px rgba(0,0,0,.2); }
+    .result-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .result-caption { padding: 18px 19px 20px; }
+    .result-caption strong { display: block; font-family: "Bricolage Grotesque", sans-serif; margin-bottom: 3px; }
+    .result-caption span { color: var(--muted); font-size: .74rem; }
+    .promo-card { align-self: start; padding: 15px; border-radius: 18px; background: var(--sky); color: var(--navy); transform: rotate(3deg); }
+    .promo-card img { width: 100%; max-width: 180px; margin-inline: auto; border-radius: 10px; }
+    .promo-card p { margin: 11px 0 0; text-align: center; font-size: .69rem; font-weight: 800; }
+    .reviews { background: var(--paper); }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .review-card { min-height: 260px; padding: 28px; border-radius: 18px; background: var(--paper-2); border: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between; }
+    .stars { color: #e6aa1e; letter-spacing: .1em; }
+    .review-card p { margin: 32px 0 18px; font-family: "Bricolage Grotesque", sans-serif; font-size: 1.25rem; line-height: 1.28; letter-spacing: -.025em; }
+    .review-card small { color: var(--muted); }
+    .booking-section { position: relative; }
+    .booking-wrap { display: grid; grid-template-columns: .78fr 1.22fr; gap: 58px; align-items: start; }
+    .booking-copy { position: sticky; top: 38px; }
+    .booking-copy h2 { margin: 14px 0 22px; }
+    .booking-copy p { max-width: 420px; color: var(--muted); }
+    .confirm-note { display: flex; gap: 12px; align-items: flex-start; margin-top: 28px; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); }
+    .confirm-note b { display: block; margin-bottom: 2px; }
+    .confirm-note span { color: var(--muted); font-size: .78rem; }
+    .booking-card { padding: clamp(26px, 4vw, 44px); border-radius: 24px; background: var(--paper); box-shadow: var(--shadow); }
+    .booking-progress { display: flex; align-items: center; gap: 9px; margin-bottom: 30px; color: var(--muted); font-family: "Azeret Mono", monospace; font-size: .6rem; }
+    .booking-progress span { width: 29px; height: 29px; display: grid; place-items: center; border-radius: 50%; color: var(--navy); background: var(--sky); font-weight: 600; }
+    .booking-progress i { flex: 1; height: 1px; background: var(--line); }
+    .step { padding: 0 0 27px; margin-bottom: 27px; border-bottom: 1px solid var(--line); }
+    .step:last-of-type { border-bottom: 0; margin-bottom: 0; }
+    .step-label { margin-bottom: 13px; font-weight: 800; }
+    .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+    .choice { min-height: 50px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: transparent; text-align: left; font-size: .77rem; font-weight: 800; cursor: pointer; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+    .choice:hover { border-color: var(--sky-deep); transform: translateY(-1px); }
+    .choice[aria-pressed="true"] { border-color: var(--navy); color: var(--white); background: var(--navy); }
+    .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    label { display: block; margin-bottom: 7px; color: var(--muted); font-size: .72rem; font-weight: 800; }
+    input, select { width: 100%; min-height: 50px; padding: 0 13px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+    input:focus, select:focus, button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, var(--sky) 60%, transparent); outline-offset: 3px; }
+    .booking-summary { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; margin: 23px 0 16px; padding: 18px; border-radius: 13px; background: var(--paper-2); }
+    .booking-summary strong { display: block; margin-bottom: 4px; }
+    .booking-summary p { margin: 0; color: var(--muted); font-size: .76rem; }
+    .summary-code { color: var(--pink); font-family: "Azeret Mono", monospace; font-size: .64rem; }
+    .wa-button { width: 100%; background: #1eaa63; box-shadow: 0 10px 24px rgba(30,170,99,.23); }
+    .wa-button:hover { box-shadow: 0 15px 30px rgba(30,170,99,.3); }
+    .form-status { min-height: 22px; margin: 10px 0 0; color: var(--pink); font-size: .75rem; font-weight: 800; }
+    .visit-section { padding-top: 0; }
+    .visit-panel { display: grid; grid-template-columns: 1.1fr .9fr; overflow: hidden; border-radius: 26px; background: var(--navy); color: var(--white); box-shadow: var(--shadow); }
+    .visit-copy { padding: clamp(38px, 6vw, 70px); }
+    .visit-copy h2 { margin: 12px 0 25px; }
+    .visit-copy .eyebrow { color: var(--sky); }
+    .visit-details { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 34px; }
+    .visit-detail span { display: block; margin-bottom: 6px; color: rgba(255,255,255,.56); font-family: "Azeret Mono", monospace; font-size: .59rem; text-transform: uppercase; }
+    .visit-detail strong, .visit-detail a { color: #fff; font-size: .85rem; font-weight: 800; text-decoration: none; }
+    .visit-detail a:hover { color: var(--sky); }
+    .location-art { position: relative; min-height: 420px; overflow: hidden; background: var(--sky); color: var(--navy); }
+    .location-art::before, .location-art::after { content: ""; position: absolute; border-radius: 50%; background: rgba(255,255,255,.32); }
+    .location-art::before { width: 300px; height: 300px; right: -70px; top: -70px; }
+    .location-art::after { width: 190px; height: 190px; left: -65px; bottom: -50px; }
+    .runway { position: absolute; width: 90px; height: 480px; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(35deg); background: var(--navy); box-shadow: 0 0 0 14px rgba(255,255,255,.18); }
+    .runway::before { content: ""; position: absolute; left: 50%; top: 18px; bottom: 18px; border-left: 3px dashed rgba(255,255,255,.75); }
+    .map-pin { position: absolute; left: 58%; top: 36%; width: 80px; height: 80px; display: grid; place-items: center; border-radius: 50% 50% 50% 0; background: var(--pink); color: #fff; transform: rotate(-45deg); box-shadow: 0 15px 30px rgba(16,40,66,.25); }
+    .map-pin svg { width: 28px; transform: rotate(45deg); }
+    .parking-tag { position: absolute; right: 24px; bottom: 24px; max-width: 230px; padding: 14px 16px; border-radius: 12px; background: var(--paper); color: var(--ink); font-size: .78rem; box-shadow: var(--shadow-small); }
+    .parking-tag b { display: block; font-family: "Bricolage Grotesque", sans-serif; margin-bottom: 3px; }
+    footer { padding: 34px 0 45px; display: flex; justify-content: space-between; gap: 24px; color: var(--muted); font-size: .76rem; }
+    footer a { text-underline-offset: 4px; }
+    .mobile-book { display: none; }
+    .reveal { opacity: 1; transform: translateY(18px); transition: transform .75s cubic-bezier(.2,.7,.2,1); }
+    .reveal.is-visible { transform: none; }
+    .reveal-delay-1 { transition-delay: .08s; }
+    .reveal-delay-2 { transition-delay: .16s; }
+    .reveal-delay-3 { transition-delay: .24s; }
+    @keyframes fly { 0%, 100% { transform: translate(0,0) rotate(-2deg); } 50% { transform: translate(10px,-9px) rotate(3deg); } }
+    @media (max-width: 980px) {
+      .shell { width: min(100% - 28px, 760px); }
+      nav a:not(.button) { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-visual { min-height: 560px; padding: 30px 46px 110px; }
+      .trust-strip { grid-template-columns: 1fr 1fr; }
+      .trust-item:nth-child(2) { border-right: 0; }
+      .trust-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .offer-grid, .section-head, .social-grid, .booking-wrap, .visit-panel { grid-template-columns: 1fr; }
+      .section-head p { margin-left: 0; }
+      .destination-grid { grid-template-columns: 1fr 1fr; }
+      .service-menu { grid-template-columns: 1fr; gap: 38px; }
+      .menu-intro, .booking-copy { position: static; }
+      .location-art { min-height: 360px; }
+    }
+    @media (max-width: 640px) {
+      .shell { width: min(100% - 22px, 520px); }
+      .announcement { font-size: .61rem; }
+      .announcement b { font-size: .69rem; }
+      header { height: 70px; }
+      header .button { display: none; }
+      .wordmark { font-size: 1.14rem; }
+      .wordmark-plane { width: 31px; height: 31px; }
+      .hero-wrap { padding-top: 5px; }
+      .hero { min-height: auto; border-radius: 22px; }
+      .hero-copy { padding: 48px 24px 38px; }
+      h1 { font-size: clamp(3.12rem, 16vw, 4.35rem); }
+      .hero-actions { display: grid; }
+      .hero-actions .button { width: 100%; }
+      .hero-visual { min-height: 470px; padding: 22px 23px 94px; }
+      .boarding-pass { padding: 22px; transform: rotate(1deg); }
+      .pass-detail { grid-template-columns: 1fr 1fr; }
+      .pass-detail > div:last-child { grid-column: 1 / -1; }
+      .nail-window { width: 172px; right: 12px; bottom: -86px; }
+      .route-code { font-size: 1.72rem; }
+      .trust-item { padding: 17px; }
+      .trust-item strong { font-size: 1.08rem; }
+      section { padding: 78px 0; }
+      .section-head { gap: 18px; margin-bottom: 30px; }
+      h2 { font-size: clamp(2.35rem, 11vw, 3.35rem); }
+      .offer-card { min-height: 0; grid-template-columns: 1fr; }
+      .promo-proof { width: 100%; padding: 0 28px 28px; justify-content: center; }
+      .promo-proof img { width: 112px; }
+      .promo-proof figcaption { max-width: 150px; }
+      .destination-grid { grid-template-columns: 1fr; }
+      .destination { min-height: 320px; }
+      .destination p { margin-bottom: 58px; }
+      .menu-row { grid-template-columns: 1fr auto; }
+      .menu-row .mini-book { grid-column: 1 / -1; width: 100%; }
+      .social-mosaic { grid-template-columns: 1fr .7fr; gap: 9px; }
+      .result-caption { padding: 14px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review-card { min-height: 220px; }
+      .choices, .field-grid, .visit-details { grid-template-columns: 1fr; }
+      .booking-summary { grid-template-columns: 1fr; }
+      .location-art { min-height: 320px; }
+      footer { flex-direction: column; align-items: flex-start; padding-bottom: 92px; }
+      .mobile-book { display: flex; position: fixed; z-index: 40; left: 12px; right: 12px; bottom: calc(10px + env(safe-area-inset-bottom)); box-shadow: 0 13px 32px rgba(16,40,66,.3); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement"><b>September routes are boarding</b><span>•</span> Bundles from AED 109</div>
+  <div class="shell">
+    <header aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Fly Me Spa home">
+        <span class="wordmark-plane" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M21.6 13.2 14.7 10l.3-6.7c0-1-.7-1.8-1.6-1.8s-1.6.8-1.6 1.8l-.5 6.1-6.4 2.1-2.3-1.9-1.2.6 1.5 3.2 8.1-.7-.4 5.2-2.5 1.2v1l4.2-.4 1.9 3.4 1-.4-.5-4.5.1-5.7 6.2 2.1c1.2.4 2.2-.9.6-1.4Z" fill="currentColor"/></svg></span>
+        <span>Fly Me Spa</span>
+      </a>
+      <nav>
+        <a href="#offers">Offers</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#services">Services</a>
+        <a href="#visit">Visit</a>
+        <a class="button" href="#book">Request a booking</a>
+      </nav>
+    </header>
+  </div>
+
+  <main id="top">
+    <div class="shell hero-wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal is-visible">
+          <span class="kicker"><span class="kicker-dot"></span> Sharjah’s beautiful girls airport</span>
+          <h1 id="hero-title">Your beauty<br>journey <span class="sky">takes off.</span></h1>
+          <p>Four destinations. One beautifully big spa. Discover city-inspired hair, nails, brows and hammam rituals on Thumbay University Road.</p>
+          <div class="hero-actions">
+            <a class="button" href="#offers">See monthly offers <span aria-hidden="true">→</span></a>
+            <a class="button ghost" href="#book">Plan my visit</a>
+          </div>
+        </div>
+        <div class="hero-visual" id="heroVisual" aria-label="Fly Me Spa boarding pass design">
+          <svg class="flight-line" viewBox="0 0 700 650" aria-hidden="true"><path d="M-20 470 C180 570 180 120 420 190 S690 220 720 60"/><g class="flight-plane" transform="translate(435 184) rotate(-18)"><path d="M36 15 22 10l1-7c.1-1.7-2.5-2.4-3.2-.8l-3 6.2-10-1.8-2.4-2-1.8.8 2 4.2 10.2 4-4.4 8-4.2.4-.7 1.8 6.4 2.2 5.8-6.2 8.3 4.5c3.2 1.8 5.3-1.4 2.5-3.2Z" fill="#ffd45f"/></g></svg>
+          <span class="cloud one" aria-hidden="true"></span><span class="cloud two" aria-hidden="true"></span>
+          <div class="boarding-pass">
+            <div class="pass-head"><div class="pass-brand">FLY ME SPA ✈</div><div class="pass-class">BEAUTY CLASS</div></div>
+            <div class="route">
+              <div class="route-code">SHJ<small>Sharjah</small></div>
+              <div class="route-line"></div>
+              <div class="route-code">GLOW<small>Your way</small></div>
+            </div>
+            <div class="pass-detail">
+              <div><span>DESTINATIONS</span><strong>4 cities</strong></div>
+              <div><span>OPEN</span><strong>Daily</strong></div>
+              <div><span>BOARDING</span><strong>10 AM–11 PM</strong></div>
+            </div>
+            <div class="nail-window">
+              <img src="data:image/webp;base64,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" alt="Glossy lilac manicure inspiration" />
+              <div class="nail-caption">London nails · colour inspiration</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="trust-strip reveal">
+        <div class="trust-item"><strong>4.6 ★</strong><span>Google reputation</span></div>
+        <div class="trust-item"><strong>689</strong><span>Google reviews</span></div>
+        <div class="trust-item"><strong>10am–11pm</strong><span>Open daily</span></div>
+        <div class="trust-item"><strong>Free</strong><span>Parking at the back</span></div>
+      </div>
+    </div>
+
+    <section class="offers-section" id="offers">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">Monthly boarding deals</span><h2>More beauty.<br>One brilliant fare.</h2></div>
+          <p>Fly Me Spa is known for monthly offers that bundle favourite treatments into one easy girls’ day out.</p>
+        </div>
+        <div class="offer-grid">
+          <article class="offer-card featured reveal reveal-delay-1">
+            <span class="stamp">LIMITED<br>ROUTE</span>
+            <div class="offer-copy">
+              <span class="offer-badge">BEST-VALUE BUNDLE</span>
+              <div class="offer-price"><sup>AED</sup> 109</div>
+              <h3>Six stops. One boarding pass.</h3>
+              <ul class="offer-list"><li>Manicure</li><li>Pedicure</li><li>Moroccan bath</li><li>Lashes</li><li>Waxing</li><li>Massage</li></ul>
+              <button class="button offer-action" type="button" data-book="AED 109 promo bundle">Book this offer</button>
+            </div>
+            <div class="promo-proof">
+              <figure><img src="data:image/webp;base64,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" alt="Official Fly Me Spa September offer graphic showing the AED 109 and AED 179 bundles" /><figcaption>Official social offer artwork, September</figcaption></figure>
+            </div>
+          </article>
+          <article class="offer-card reveal reveal-delay-2">
+            <span class="stamp">PREMIUM<br>ROUTE</span>
+            <div class="offer-copy">
+              <span class="offer-badge">THE FULL ESCAPE</span>
+              <div class="offer-price"><sup>AED</sup> 179</div>
+              <h3>From hammam to glam.</h3>
+              <ul class="offer-list"><li>Special Moroccan bath</li><li>Facial</li><li>Dandruff treatment</li><li>Russian manicure</li><li>Glam makeup</li><li>Hot-stone massage</li></ul>
+              <button class="button secondary offer-action" type="button" data-book="AED 179 promo bundle">Book this offer</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations" id="destinations">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">Choose your destination</span><h2>The finest of the world,<br>under one roof.</h2></div>
+          <p>Each treatment department has its own city, mood and specialty—a travel concept guests remember long after landing.</p>
+        </div>
+        <div class="destination-grid">
+          <article class="destination marrakech reveal"><div class="city-code"><span>MAR · 01</span><span class="city-icon">M</span></div><div><h3>Marrakech</h3><p>Steam, exfoliation and restorative hammam rituals.</p></div><span class="service-name">Moroccan bath</span></article>
+          <article class="destination tokyo reveal reveal-delay-1"><div class="city-code"><span>TYO · 02</span><span class="city-icon">T</span></div><div><h3>Tokyo</h3><p>Clean lines and careful detail for beautifully shaped brows.</p></div><span class="service-name">Eyebrows</span></article>
+          <article class="destination london reveal reveal-delay-2"><div class="city-code"><span>LON · 03</span><span class="city-icon">L</span></div><div><h3>London</h3><p>Precise manicures, pedicures and statement nail finishes.</p></div><span class="service-name">Nails</span></article>
+          <article class="destination roma reveal reveal-delay-3"><div class="city-code"><span>ROM · 04</span><span class="city-icon">R</span></div><div><h3>Roma</h3><p>Hair rituals, treatments and polished blow-dry finishes.</p></div><span class="service-name">Hair</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="shell service-menu">
+        <div class="menu-intro reveal"><span class="eyebrow">Published services</span><h2>Pick your route.</h2><p>Packages make regular care easier. Single treatments without a published price can be requested directly with the team.</p><a class="button ghost" href="#book">Build a booking request</a></div>
+        <div class="menu-list reveal reveal-delay-1">
+          <div class="menu-row"><div><strong>Special Moroccan bath</strong><small>Marrakech</small></div><span class="menu-price">AED 165–330</span><button class="mini-book" type="button" data-book="Special Moroccan bath">Choose</button></div>
+          <div class="menu-row"><div><strong>Organic hair treatment</strong><small>Roma · 4 sessions + 1 free</small></div><span class="menu-price">AED 499</span><button class="mini-book" type="button" data-book="Roma organic hair treatment package">Choose</button></div>
+          <div class="menu-row"><div><strong>Milkshake hair treatment</strong><small>Roma · 4 sessions + 1 free</small></div><span class="menu-price">AED 599</span><button class="mini-book" type="button" data-book="Roma milkshake hair treatment package">Choose</button></div>
+          <div class="menu-row"><div><strong>Manicure &amp; pedicure</strong><small>London · 4 sessions + 1 free</small></div><span class="menu-price">AED 499</span><button class="mini-book" type="button" data-book="London manicure & pedicure package">Choose</button></div>
+          <div class="menu-row"><div><strong>Wash &amp; blow-dry</strong><small>4 sessions + 1 free</small></div><span class="menu-price">AED 399</span><button class="mini-book" type="button" data-book="Hair wash & blow-dry package">Choose</button></div>
+          <div class="menu-row"><div><strong>Facials &amp; dermaplaning</strong><small>Skin services</small></div><span class="menu-price">ASK TEAM</span><button class="mini-book" type="button" data-book="Facial or dermaplaning">Choose</button></div>
+          <div class="menu-row"><div><strong>Eyebrow threading</strong><small>Tokyo</small></div><span class="menu-price">ASK TEAM</span><button class="mini-book" type="button" data-book="Eyebrow threading">Choose</button></div>
+          <div class="menu-row"><div><strong>Back or hot-stone massage</strong><small>Relaxation services</small></div><span class="menu-price">ASK TEAM</span><button class="mini-book" type="button" data-book="Back or hot-stone massage">Choose</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof" id="results">
+      <div class="shell social-grid">
+        <div class="social-copy reveal">
+          <span class="eyebrow">From Fly Me Spa</span>
+          <h2>Colourful results.<br>Real spa energy.</h2>
+          <p>Social content mixes nail reveals, treatment montages, behind-the-scenes tours, specialist features and monthly offers—the bright, energetic side of self-care.</p>
+          <div class="social-links"><a href="https://www.instagram.com/flymespa/?hl=en" target="_blank" rel="noopener noreferrer">Instagram @flymespa ↗</a><a href="https://www.snapchat.com/@flymespa" target="_blank" rel="noopener noreferrer">Snapchat @flymespa ↗</a></div>
+        </div>
+        <div class="social-mosaic reveal reveal-delay-1">
+          <article class="result-card"><img src="data:image/webp;base64,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" alt="Lilac manicure colour inspiration" /><div class="result-caption"><strong>London precision</strong><span>A glossy lilac mood for the nails destination.</span></div></article>
+          <article class="promo-card"><img src="data:image/webp;base64,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" alt="Official Fly Me Spa promotional graphic with September bundles" /><p>Offer-led, playful and unmistakably Fly Me Spa.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div><span class="eyebrow">Guest notes</span><h2>Worth the drive<br>from Dubai.</h2></div>
+          <p>Across hundreds of reviews, guests return to the same themes: kind people, a spacious setting, standout nail work and offers worth planning for.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal"><div class="stars" aria-label="Five stars">★★★★★</div><p>Kind staff and manager, a very large space, easy rear parking and monthly offers guests look forward to.</p><small>Paraphrased guest review</small></article>
+          <article class="review-card reveal reveal-delay-1"><div class="stars" aria-label="Five stars">★★★★★</div><p>A regular drives from Dubai for clean, precise nail work, positive energy and the city-themed departments.</p><small>Paraphrased guest review</small></article>
+          <article class="review-card reveal reveal-delay-2"><div class="stars" aria-label="Five stars">★★★★★</div><p>The hot-stone massage stood out for a therapist described as friendly, professional and very good.</p><small>Paraphrased guest review</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="book">
+      <div class="shell booking-wrap">
+        <div class="booking-copy reveal">
+          <span class="eyebrow">Request an appointment</span>
+          <h2>Ready for boarding?</h2>
+          <p>Choose your treatment, date and time. We’ll prepare your WhatsApp request to Fly Me Spa.</p>
+          <div class="confirm-note"><span aria-hidden="true">✓</span><div><b>Your slot is a request.</b><span>Fly Me Spa must confirm the appointment and final availability on WhatsApp.</span></div></div>
+        </div>
+        <div class="booking-card reveal reveal-delay-1" aria-label="WhatsApp appointment request builder">
+          <div class="booking-progress"><span>1</span><i></i><span>2</span><i></i><span>3</span><i></i><span>✈</span></div>
+          <div class="step">
+            <div class="step-label">1. Choose a service</div>
+            <div class="choices" data-group="service">
+              <button class="choice" type="button" aria-pressed="true" data-value="AED 109 promo bundle">AED 109 promo bundle</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="AED 179 promo bundle">AED 179 promo bundle</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="Special Moroccan bath">Special Moroccan bath</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="Roma organic hair treatment package">Roma organic hair package</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="Roma milkshake hair treatment package">Roma milkshake hair package</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="London manicure & pedicure package">London mani-pedi package</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="Hair wash & blow-dry package">Wash &amp; blow-dry package</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="Facial or dermaplaning">Facial / dermaplaning</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="Eyebrow threading">Eyebrow threading</button>
+              <button class="choice" type="button" aria-pressed="false" data-value="Back or hot-stone massage">Back / hot-stone massage</button>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2. Add your details</div>
+            <div class="field-grid">
+              <div><label for="guestName">Your name</label><input id="guestName" type="text" autocomplete="name" placeholder="First name" /></div>
+              <div><label for="date">Preferred date</label><input id="date" type="date" /></div>
+              <div><label for="time">Preferred time</label><select id="time"><option value="">Choose a time</option><option>10:00 AM</option><option>11:30 AM</option><option>1:00 PM</option><option>2:30 PM</option><option>4:00 PM</option><option>5:30 PM</option><option>7:00 PM</option><option>8:30 PM</option><option>10:00 PM</option></select></div>
+              <div><label for="contactNumber">Your mobile (optional)</label><input id="contactNumber" type="tel" autocomplete="tel" placeholder="+971 …" /></div>
+            </div>
+          </div>
+          <div class="booking-summary" aria-live="polite"><div><strong id="summaryService">AED 109 promo bundle</strong><p id="summaryTime">Choose a date · Choose a time</p></div><span class="summary-code">SHJ → GLOW</span></div>
+          <a class="button wa-button" id="whatsappButton" href="#book" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.6l1.6-4.7a8.5 8.5 0 1 1 15.9-4.2Z" stroke="currentColor" stroke-width="1.8"/><path d="M9 8c.3-.7.5-.7.9-.7h.5c.2 0 .4 0 .6.5l.7 1.6c.1.3.1.5-.1.7l-.5.7c-.2.2-.3.4-.1.7.4.8 1 1.5 1.7 2 .6.5 1.2.8 1.5.9.3.1.5 0 .7-.2l.9-1.1c.2-.3.5-.2.7-.1l1.7.8c.3.1.5.2.5.4.1.2.1 1.1-.3 1.8-.4.7-1.7 1.4-2.4 1.4-.7 0-1.6.1-3.6-.8a11.7 11.7 0 0 1-4.2-3.7c-.5-.7-1.4-2-.6-3.4.2-.5.6-1 .9-1.5Z" fill="currentColor"/></svg>Open WhatsApp request</a>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit">
+      <div class="shell">
+        <div class="visit-panel reveal">
+          <div class="visit-copy">
+            <span class="eyebrow">Final call</span>
+            <h2>Land in Muwaileh.</h2>
+            <div class="visit-details">
+              <div class="visit-detail"><span>Address</span><strong>Thumbay University Road,<br>Muwaileh Commercial, Sharjah</strong></div>
+              <div class="visit-detail"><span>Hours</span><strong>10:00 AM–11:00 PM<br>Every day</strong></div>
+              <div class="visit-detail"><span>Call</span><a href="tel:+97165678886">+971 6 567 8886</a></div>
+              <div class="visit-detail"><span>Email</span><a href="mailto:flymespa@gmail.com">flymespa@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="location-art" aria-label="Abstract runway illustration marking Fly Me Spa in Muwaileh">
+            <div class="runway" aria-hidden="true"></div>
+            <div class="map-pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M21.6 13.2 14.7 10l.3-6.7c0-1-.7-1.8-1.6-1.8s-1.6.8-1.6 1.8l-.5 6.1-6.4 2.1-2.3-1.9-1.2.6 1.5 3.2 8.1-.7-.4 5.2-2.5 1.2v1l4.2-.4 1.9 3.4 1-.4-.5-4.5.1-5.7 6.2 2.1c1.2.4 2.2-.9.6-1.4Z" fill="currentColor"/></svg></div>
+            <div class="parking-tag"><b>Easy arrival</b>Guests highlight the large space and free parking behind the building.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="shell"><footer><span>Fly Me Spa · Beautiful Girls Airport</span><a href="#top">Back to departures ↑</a></footer></div>
+  <a class="button mobile-book" href="#book">Request a booking</a>
+
+  <script>
+    const state = { service: 'AED 109 promo bundle' };
+    const dateInput = document.getElementById('date');
+    const timeInput = document.getElementById('time');
+    const nameInput = document.getElementById('guestName');
+    const phoneInput = document.getElementById('contactNumber');
+    const summaryService = document.getElementById('summaryService');
+    const summaryTime = document.getElementById('summaryTime');
+    const whatsappButton = document.getElementById('whatsappButton');
+    const formStatus = document.getElementById('formStatus');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    const today = new Date();
+    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    dateInput.min = localToday;
+
+    function formattedDate() {
+      if (!dateInput.value) return 'Choose a date';
+      const [year, month, day] = dateInput.value.split('-').map(Number);
+      return new Intl.DateTimeFormat('en-AE', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(year, month - 1, day));
+    }
+
+    function buildMessage() {
+      const guest = nameInput.value.trim() || '[your name]';
+      const phone = phoneInput.value.trim();
+      return `Hello Fly Me Spa ✈️, my name is ${guest}. I'd like to request ${state.service}. Preferred date: ${formattedDate()}. Preferred time: ${timeInput.value || '[choose a time]'}.${phone ? ` My mobile number is ${phone}.` : ''} Please confirm whether this appointment is available. Thank you!`;
+    }
+
+    function updateSummary() {
+      summaryService.textContent = state.service;
+      summaryTime.textContent = `${formattedDate()} · ${timeInput.value || 'Choose a time'}`;
+      whatsappButton.href = `https://wa.me/97165678886?text=${encodeURIComponent(buildMessage())}`;
+      formStatus.textContent = '';
+    }
+
+    function selectService(value) {
+      state.service = value;
+      document.querySelectorAll('[data-group="service"] .choice').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.value === value)));
+      updateSummary();
+    }
+
+    document.querySelectorAll('[data-group="service"] .choice').forEach(button => {
+      button.addEventListener('click', () => selectService(button.dataset.value));
+    });
+
+    document.querySelectorAll('[data-book]').forEach(button => {
+      button.addEventListener('click', () => {
+        selectService(button.dataset.book);
+        document.getElementById('book').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' });
+        setTimeout(() => nameInput.focus({ preventScroll: true }), reducedMotion ? 0 : 520);
+      });
+    });
+
+    [dateInput, timeInput, nameInput, phoneInput].forEach(input => input.addEventListener('input', updateSummary));
+    timeInput.addEventListener('change', updateSummary);
+
+    whatsappButton.addEventListener('click', event => {
+      const missing = [];
+      if (!nameInput.value.trim()) missing.push('your name');
+      if (!dateInput.value) missing.push('a date');
+      if (!timeInput.value) missing.push('a time');
+      if (missing.length) {
+        event.preventDefault();
+        formStatus.textContent = `Please add ${missing.join(', ')} before opening WhatsApp.`;
+        (missing[0] === 'your name' ? nameInput : missing[0] === 'a date' ? dateInput : timeInput).focus();
+        return;
+      }
+      formStatus.textContent = 'WhatsApp request prepared. Fly Me Spa will need to confirm your slot.';
+    });
+
+    if ('IntersectionObserver' in window && !reducedMotion) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .12 });
+      document.querySelectorAll('.reveal:not(.is-visible)').forEach(element => observer.observe(element));
+    } else {
+      document.querySelectorAll('.reveal').forEach(element => element.classList.add('is-visible'));
+    }
+
+    if (!reducedMotion) {
+      const heroVisual = document.getElementById('heroVisual');
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            const offset = Math.min(window.scrollY * .045, 24);
+            heroVisual.style.transform = `translateY(${offset}px)`;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    }
+
+    updateSummary();
+  </script>
+</body>
+</html>

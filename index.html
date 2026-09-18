@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sathvik Reddy — sathvikreddy.com</title>
+  <meta name="description" content="Personal website of Sathvik Reddy." />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <p class="eyebrow">sathvikreddy.com</p>
+      <h1>Hi, I'm Sathvik Reddy.</h1>
+      <p class="lede">This site is hosted on <strong>Cloudflare Pages</strong>. It's live, fast, and secure.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:hello@sathvikreddy.com">Say hello</a>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>About</h2>
+        <p>Edit <code>index.html</code> to make this your own. This is a pure static site — no build step needed.</p>
+      </div>
+      <div class="card">
+        <h2>Projects</h2>
+        <p>Add your work, links, and writing here.</p>
+        <ul>
+          <li>Project one — short description</li>
+          <li>Project two — short description</li>
+          <li>Project three — short description</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Replace with your real links:</p>
+        <ul>
+          <li><a href="mailto:hello@sathvikreddy.com">hello@sathvikreddy.com</a></li>
+          <li><a href="#">LinkedIn</a> · <a href="#">X / Twitter</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Sathvik Reddy · Built with HTML + CSS · Hosted on Cloudflare Pages</p>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
