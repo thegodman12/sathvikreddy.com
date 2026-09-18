@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Smile Dental Clinic - Ajman | Painless Dentistry &amp; Smile Makeovers</title>
+<meta name="description" content="Just Smile Dental Clinic in Al Jurf, Ajman. Veneers, root canals, crowns and painless dentistry by Dr. Noora and Dr. Yossef. Rated 4.8 from 173 reviews.">
+<style>
+:root{--teal:#0b7c8c;--teal2:#095e6a;--sky:#e8f6f9;--sun:#f5a623;--sun2:#d98a0b;--ink:#1d2b30;--muted:#55666c;--card:#fff;--line:#d8e8ec}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.65}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--teal2);color:#e6f4f7;font-size:.82rem;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none;font-weight:700}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .mark{width:50px;height:50px;border-radius:16px;background:linear-gradient(135deg,var(--teal),var(--sun));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:1.3rem}
+.brand .name{font-size:1.3rem;font-weight:800;color:var(--teal2);line-height:1.15}
+.brand .name small{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sun2);font-weight:700}
+.btn{display:inline-block;background:var(--sun);color:#3a2a05;text-decoration:none;font-weight:800;padding:14px 30px;border-radius:999px}
+.btn:hover{background:var(--sun2);color:#fff}
+.btn.ghost{background:transparent;color:var(--teal2);border:2px solid var(--teal)}
+.btn.ghost:hover{background:var(--teal);color:#fff}
+.btn.teal{background:var(--teal);color:#fff}
+.btn.teal:hover{background:var(--teal2)}
+.hero{background:linear-gradient(180deg,var(--sky) 0%,#fff 100%);padding:64px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.88rem;font-weight:700;color:var(--teal2);box-shadow:0 2px 10px rgba(11,124,140,.08)}
+.badge .stars{color:var(--sun);letter-spacing:2px}
+.hero h1{font-size:2.7rem;line-height:1.16;margin:16px 0;color:var(--teal2);letter-spacing:-.01em}
+.hero h1 .hl{color:var(--sun2)}
+.hero p.lead{font-size:1.08rem;color:var(--muted);max-width:34em}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-art img{width:100%;height:auto;border-radius:22px;box-shadow:0 18px 40px rgba(11,124,140,.16)}
+.pillars{padding:26px 0}
+.pillars .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pillar{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;gap:14px;align-items:center;font-weight:600;color:var(--teal2)}
+.pillar .dot{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center}
+section.block{padding:60px 0}
+section.block.alt{background:var(--sky)}
+.kicker{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sun2);font-weight:800;margin-bottom:10px}
+h2{font-size:2rem;color:var(--teal2);margin-bottom:8px;letter-spacing:-.01em}
+.sub{color:var(--muted);max-width:44em;margin-bottom:32px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px}
+.card .tag{display:inline-block;background:#fff4dd;color:#8a5c06;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.card h3{font-size:1.25rem;color:var(--teal2);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.96rem}
+.doctors{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.doc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;display:flex;gap:20px;align-items:flex-start}
+.doc .avatar{flex:0 0 auto;width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--sun));color:#fff;font-weight:800;font-size:1.5rem;display:flex;align-items:center;justify-content:center}
+.doc h3{color:var(--teal2);font-size:1.2rem}
+.doc .role{font-size:.85rem;color:var(--sun2);font-weight:700;margin-bottom:8px}
+.doc p{color:var(--muted);font-size:.94rem}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.review{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}
+.review .stars{color:var(--sun);letter-spacing:3px;margin-bottom:10px}
+.review p{font-size:.97rem;color:var(--ink)}
+.review .who{margin-top:14px;font-size:.85rem;color:var(--muted);font-weight:600}
+.visit{background:var(--teal2);color:#eaf5f7;border-radius:22px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.visit h2{color:#fff}
+.visit p{color:#cfe3e8}
+.visit a{color:#fff}
+.visit .btn{margin-top:14px}
+footer{background:#0a3a44;color:#9fc3cb;padding:30px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:#fff}
+.demo-note{background:#fff8e6;border-top:1px dashed var(--sun);padding:12px 0;font-size:.8rem;color:#7a5c14;text-align:center}
+@media(max-width:860px){.hero .wrap,.doctors,.reviews,.visit{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.pillars .wrap{grid-template-columns:1fr}.hero h1{font-size:2rem}.visit{padding:30px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>Jasmine Towers J4, Garden City, Al Jurf, Ajman</span><a href="tel:+97167445541">Call +971 6 744 5541</a></div></div>
+<header class="site"><div class="wrap">
+<a class="brand" href="#top"><span class="mark">JS</span><span class="name">Just Smile<small>Dental Clinic</small></span></a>
+<a class="btn teal" href="tel:+97167445541">Book Appointment</a>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap">
+<div>
+<span class="badge"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8 from 173 patient reviews</span>
+<h1>Dentistry that <span class="hl">doesn't hurt</span>, smiles that turn heads</h1>
+<p class="lead">Veneers, root canals and crowns done gently, explained clearly, and priced fairly. That is why Al Jurf keeps recommending us.</p>
+<div class="cta"><a class="btn" href="tel:+97167445541">Call +971 6 744 5541</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Just+Smile+Dental+Clinic+Jasmine+Towers+Ajman" target="_blank" rel="noopener">Find the Clinic</a></div>
+</div>
+<div class="hero-art"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 460'%3E%3Crect width='600' height='460' rx='22' fill='%23e8f6f9'/%3E%3Ccircle cx='300' cy='190' r='110' fill='%230b7c8c'/%3E%3Cpath d='M262 140c-14 0-24 10-24 24 0 26 12 34 16 58 2 14 6 40 18 40 10 0 8-24 10-36 2-10 6-14 18-14s16 4 18 14c2 12 0 36 10 36 12 0 16-26 18-40 4-24 16-32 16-58 0-14-10-24-24-24-12 0-16 8-28 8s-16-8-28-8z' fill='%23ffffff'/%3E%3Cpath d='M190 330q110 60 220 0' stroke='%23f5a623' stroke-width='14' fill='none' stroke-linecap='round'/%3E%3Ctext x='300' y='410' text-anchor='middle' font-family='Arial,sans-serif' font-size='26' font-weight='bold' fill='%23095e6a'%3EJust Smile%3C/text%3E%3C/svg%3E" alt="Just Smile Dental Clinic smile illustration"></div>
+</div></section>
+
+<div class="pillars"><div class="wrap">
+<div class="pillar"><span class="dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b7c8c" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>Painless-first treatments</div>
+<div class="pillar"><span class="dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b7c8c" stroke-width="2"><path d="M12 21c-4 0-7-3-7-7 0-5 4-6 4-11 2 2 2 5 3 5s1-3 3-5c0 5 4 6 4 11 0 4-3 7-7 7z"/></svg></span>Every step explained</div>
+<div class="pillar"><span class="dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b7c8c" stroke-width="2"><path d="M12 2l2.4 4.9 5.6.8-4 4 .9 5.6-4.9-2.6L7.1 17.3l.9-5.6-4-4 5.6-.8z"/></svg></span>173 five-star reviews</div>
+</div></div>
+
+<section class="block"><div class="wrap">
+<div class="kicker">Treatments</div>
+<h2>What we do best</h2>
+<p class="sub">Cosmetic and restorative dentistry with a gentle hand. No lectures, no surprises, just clear plans.</p>
+<div class="cards">
+<div class="card"><span class="tag">Most loved</span><h3>Veneers &amp; Smile Design</h3><p>Thin, natural-looking veneers shaped to your face. Patients call the result painless and the staff friendly from start to finish.</p></div>
+<div class="card"><span class="tag">Painless</span><h3>Root Canal Treatment</h3><p>Infected tooth saved without the horror stories. Soft touch, careful numbing, and a clear explanation before we begin.</p></div>
+<div class="card"><h3>Crowns</h3><p>Strong, natural-looking crowns that protect damaged teeth and blend in with your smile.</p></div>
+<div class="card"><h3>General Dentistry</h3><p>Checkups, fillings and cleanings for the whole family, with honest advice on what you actually need.</p></div>
+</div>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+<div class="kicker">Our doctors</div>
+<h2>Dentists patients ask for by name</h2>
+<p class="sub">Real reviews mention our doctors again and again. Here is why.</p>
+<div class="doctors">
+<div class="doc"><span class="avatar">N</span><div><h3>Dr. Noora</h3><div class="role">Gentle dentistry</div><p>Known for a soft, painless touch. Patients say they trust her completely, visit after visit.</p></div></div>
+<div class="doc"><span class="avatar">Y</span><div><h3>Dr. Yossef</h3><div class="role">Root canals &amp; crowns</div><p>Explains every step, tailors the treatment to your case, and does his best to get you the right outcome.</p></div></div>
+</div>
+</div></section>
+
+<section class="block"><div class="wrap">
+<div class="kicker">Patient stories</div>
+<h2>4.8 stars, in their words</h2>
+<p class="sub">Unedited excerpts from Google reviews.</p>
+<div class="reviews">
+<div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"One of the best dental experience ever. Everything very professional and taken well care, dr noora can be trusted anytime with soft and painless touch"</p><div class="who">Essa Shaukat &middot; Google review</div></div>
+<div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Exceptional and professional medical dental services, Dr Yossef one of the few Dentists in UAE you can trust that you are in a good hands, he will explain every step to you"</p><div class="who">Ramy Gamal El Dien &middot; Google review</div></div>
+<div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Excellent care and attention to details, exceptional experience of dentists. Good and very nice experience for root canal treatment and crown. Thanks Dr. Yousef."</p><div class="who">Alaa Aburok &middot; Google review</div></div>
+<div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Super satisfied with the treatment i have received before &amp; after applying on the veneers. Very professional, the procedure caused no pain... highly recommended."</p><div class="who">M7mmmd_ H &middot; Google review</div></div>
+</div>
+</div></section>
+
+<section class="block" id="visit"><div class="wrap">
+<div class="visit">
+<div>
+<div class="kicker" style="color:#f5a623">Visit us</div>
+<h2>Come see us in Al Jurf</h2>
+<p><strong style="color:#fff">Just Smile Dental Clinic</strong><br>Jasmine Towers (J4), Flat 302<br>Garden City, Al Jurf, Ajman, UAE</p>
+<p style="margin-top:12px">Wheelchair accessible &middot; Card &amp; NFC payments accepted</p>
+</div>
+<div>
+<h2>Book your visit</h2>
+<p>Call us and we will find you a slot that fits your day.</p>
+<p style="font-size:1.3rem;font-weight:800;margin-top:8px"><a href="tel:+97167445541">+971 6 744 5541</a></p>
+<a class="btn" href="tel:+97167445541">Call Now</a><br>
+<a class="btn ghost" style="color:#fff;border-color:#fff;margin-top:10px" href="https://www.google.com/maps/search/?api=1&query=Just+Smile+Dental+Clinic+Jasmine+Towers+Ajman" target="_blank" rel="noopener">Get Directions</a>
+</div>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<span><strong style="color:#fff">Just Smile Dental Clinic</strong> &middot; Jasmine Towers J4, Garden City, Al Jurf, Ajman</span>
+<span><a href="tel:+97167445541">+971 6 744 5541</a></span>
+</div></footer>
+<div class="demo-note">Demo website preview prepared by Sathvik, freelance web designer.</div>
+</body>
+</html>
