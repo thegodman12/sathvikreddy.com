@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Saad Dental Clinic - Al Khan, Sharjah | Gentle Dental Care</title>
+<meta name="description" content="Al Saad Dental Clinic in Al Khan, Sharjah. Rated 4.8 by 126 patients. Gentle, painless dentistry for the whole family. Most insurance plans accepted.">
+<style>
+:root{
+  --lilac:#8b7bb8; --lilac-d:#6f5d9e; --lilac-l:#efeaf9; --lilac-xl:#f7f4fd;
+  --white:#ffffff; --ink:#33323e; --muted:#74718a; --line:#e4ddf3;
+  --peach:#f6c9a8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--white);color:var(--ink);line-height:1.65}
+h1,h2,h3{font-weight:800;letter-spacing:-.015em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+.topbar{background:var(--lilac-d);color:#f1ecfb;font-size:.83rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none;font-weight:700}
+header.site{background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:13px 22px;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--lilac-d)}
+.brand .mark{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--lilac),var(--lilac-d));display:flex;align-items:center;justify-content:center;flex:0 0 auto;box-shadow:0 6px 16px rgba(139,123,184,.35)}
+.brand .mark svg{width:26px;height:26px;fill:#fff}
+.brand strong{font-size:1.24rem;display:block;line-height:1.15}
+.brand small{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+nav a{margin-left:20px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.94rem}
+nav a:hover{color:var(--lilac-d)}
+.btn{display:inline-block;background:var(--lilac-d);color:#fff;text-decoration:none;font-weight:700;padding:14px 32px;border-radius:999px;font-size:1rem;border:0;box-shadow:0 8px 22px rgba(111,93,158,.32);cursor:pointer}
+.btn:hover{background:#5d4c88}
+.btn.soft{background:var(--lilac-l);color:var(--lilac-d);box-shadow:none}
+.btn.soft:hover{background:#e3d9f5}
+.hero{background:linear-gradient(180deg,var(--lilac-xl) 0%,#fff 100%);padding:70px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding-bottom:0}
+.pill{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--lilac-d);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:18px;box-shadow:0 4px 12px rgba(139,123,184,.12)}
+.hero h1{font-size:2.9rem;line-height:1.1;color:#2c2b3a;margin-bottom:16px}
+.hero h1 .hl{color:var(--lilac-d);position:relative}
+.hero p.lead{font-size:1.12rem;color:var(--muted);max-width:32rem;margin-bottom:26px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.calm-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.calm-strip span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.88rem;color:var(--lilac-d);font-weight:600}
+.hero-art{background:#fff;border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:0 20px 55px rgba(139,123,184,.16);text-align:center}
+.hero-art .score{font-size:4.2rem;font-weight:800;color:var(--lilac-d);line-height:1}
+.hero-art .stars{color:#e0a93e;font-size:1.5rem;letter-spacing:3px;margin:8px 0}
+.hero-art p{color:var(--muted);font-size:.96rem}
+.wave{display:block;width:100%;height:70px;margin-top:46px}
+.wave path{fill:#fff}
+.promise{background:#fff;padding:56px 0}
+.promise .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.promise h2{font-size:2.05rem;color:#2c2b3a;margin-bottom:14px}
+.promise p{color:var(--muted);margin-bottom:14px}
+.promise-list{list-style:none;margin-top:6px}
+.promise-list li{padding:10px 0 10px 34px;position:relative;color:#3d3c4c;font-weight:600}
+.promise-list li::before{content:"✓";position:absolute;left:0;top:10px;width:24px;height:24px;border-radius:50%;background:var(--lilac-l);color:var(--lilac-d);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.85rem}
+.services{background:var(--lilac-xl);padding:60px 0}
+.sec-head{text-align:center;max-width:38rem;margin:0 auto 38px}
+.sec-head .k{font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--lilac-d);margin-bottom:10px}
+.sec-head h2{font-size:2.1rem;color:#2c2b3a;margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 6px 18px rgba(139,123,184,.08)}
+.svc .dot{width:52px;height:52px;border-radius:50%;background:var(--lilac-l);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.svc .dot svg{width:26px;height:26px;stroke:var(--lilac-d);fill:none;stroke-width:1.8}
+.svc h3{font-size:1.12rem;color:#2c2b3a;margin-bottom:8px}
+.svc p{font-size:.93rem;color:var(--muted)}
+.insurance{background:var(--lilac-d);color:#f1ecfb;padding:44px 0;text-align:center}
+.insurance h2{font-size:1.7rem;margin-bottom:8px}
+.insurance p{color:#d9d1ee;max-width:36rem;margin:0 auto}
+.insurance .big{font-size:2.6rem;font-weight:800;color:#fff;margin-bottom:6px}
+.reviews{padding:60px 0;background:#fff}
+.review-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.rcard{background:var(--lilac-xl);border:1px solid var(--line);border-radius:22px;padding:28px}
+.rcard .stars{color:#e0a93e;font-size:1.1rem;letter-spacing:2px}
+.rcard p{font-style:italic;color:#44435a;margin:12px 0;font-size:1rem}
+.rcard b{color:var(--lilac-d)}
+.visit{padding:60px 0;background:linear-gradient(180deg,#fff,var(--lilac-xl))}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px;box-shadow:0 10px 30px rgba(139,123,184,.10)}
+.card h3{font-size:1.35rem;color:#2c2b3a;margin-bottom:16px}
+.hrow{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dashed var(--line);font-size:.96rem}
+.hrow:last-child{border-bottom:0}
+.hrow b{color:var(--lilac-d)}
+.clist{list-style:none}
+.clist li{margin-bottom:14px;font-size:1rem}
+.clist a{color:var(--lilac-d);font-weight:700;text-decoration:none}
+footer{background:#2c2b3a;color:#b9b6cc;padding:32px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+footer strong{color:#fff}
+.demo-note{background:#fff7dd;border-bottom:1px solid #ead98a;color:#6d5c12;font-size:.78rem;padding:8px 0;text-align:center}
+@media(max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:34px}
+  .hero h1{font-size:2.15rem}
+  .promise .wrap{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .review-cards{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+  nav{display:none}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">Demo website preview. Built from public listing information only.</div>
+<div class="topbar">
+  <div class="wrap">
+    <span>Sun - Thu &amp; Sat: 12:00 PM - 8:00 PM &nbsp;|&nbsp; Friday closed</span>
+    <a href="tel:+971505007764">Call: +971 50 500 7764</a>
+  </div>
+</div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="mark"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5.5 4.5 5.5 8c0 2.3 1 3.9 1.8 6 .7 1.9 1 4.6 1.6 6.4.2.6.7.6.9 0l.8-3.9c.2-1 .6-1.7 1.4-1.7s1.2.7 1.4 1.7l.8 3.9c.2.6.7.6.9 0 .6-1.8.9-4.5 1.6-6.4.8-2.1 1.8-3.7 1.8-6 0-3.5-2.5-6-6.5-6z"/></svg></span>
+      <span><strong>Al Saad Dental Clinic</strong><small>Al Khan, Sharjah</small></span>
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#promise">Our Promise</a>
+      <a href="#visit">Visit Us</a>
+      <a class="btn" style="padding:10px 22px;font-size:.9rem;margin-left:20px;box-shadow:none" href="tel:+971505007764">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="pill">Nervous about the dentist? You are safe here.</span>
+      <h1>Dentistry that is <span class="hl">gentle</span> first. Keep smiles great.</h1>
+      <p class="lead">We explain everything before we begin, work at your pace, and keep every visit calm and painless. From your child's first checkup to implants, comfort comes first.</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:+971505007764">Call +971 50 500 7764</a>
+        <a class="btn soft" href="#services">Explore Services</a>
+      </div>
+      <div class="calm-strip">
+        <span>Painless-first approach</span>
+        <span>We explain, then we treat</span>
+        <span>Kids welcome</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='56' fill='%238b7bb8'/%3E%3Cpath d='M60 28c-11 0-19 8-19 19 0 7 3.2 12.2 5.6 18.6 2.1 5.8 3 14.2 4.9 19.7.6 1.8 2.1 1.8 2.7 0l2.5-12c.6-3 1.9-5.2 4.3-5.2s3.7 2.2 4.3 5.2l2.5 12c.6 1.8 2.1 1.8 2.7 0 1.9-5.5 2.8-13.9 4.9-19.7 2.4-6.4 5.6-11.6 5.6-18.6 0-11-8-19-19-19z' fill='%23ffffff'/%3E%3C/svg%3E" alt="Al Saad Dental Clinic" width="110" height="110" style="border-radius:50%;margin-bottom:10px">
+      <div class="score">4.8</div>
+      <div class="stars">★★★★★</div>
+      <p><strong>126 patient reviews</strong> on Google.<br>Office 204, Al Saad Tower 1, Al Taawun Street, Al Khan, Sharjah.</p>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,45 L1440,70 L0,70 Z"/></svg>
+</section>
+
+<section class="promise" id="promise">
+  <div class="wrap">
+    <div>
+      <h2>Dental visits should not feel scary.</h2>
+      <p>Many of our patients arrive nervous and leave surprised at how easy it was. That is not luck. It is how we work, every appointment.</p>
+      <ul class="promise-list">
+        <li>Every procedure explained in plain words first</li>
+        <li>We pause whenever you raise a hand</li>
+        <li>Strict sterilization and hygiene standards</li>
+        <li>Flexible appointments and fair, clear pricing</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Why patients stay with us</h3>
+      <p style="color:var(--muted);font-size:1rem">Friendly faces, advanced technology, and a team that treats comfort as part of the treatment. Most insurance plans accepted, so good care stays within reach.</p>
+      <div style="margin-top:18px"><a class="btn" href="tel:+971505007764">Talk to Our Team</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Services</div>
+      <h2>Everything your smile needs, in one calm place</h2>
+      <p>General, cosmetic, and specialist care for adults and children.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
+        <h3>General Dentistry</h3>
+        <p>Checkups, cleanings, fillings, and honest advice. The routine care that keeps small issues small.</p>
+      </div>
+      <div class="svc">
+        <div class="dot"><svg viewBox="0 0 24 24"><path d="M4 12h16M6 8h12M7 16h10"/></svg></div>
+        <h3>Braces &amp; Orthodontics</h3>
+        <p>Straighten teeth at any age with modern orthodontic options, planned around your smile.</p>
+      </div>
+      <div class="svc">
+        <div class="dot"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7l14 10M19 7L5 17"/></svg></div>
+        <h3>Implants, Crowns &amp; Bridges</h3>
+        <p>Long-lasting replacements that look and feel natural, from a single crown to full implants.</p>
+      </div>
+      <div class="svc">
+        <div class="dot"><svg viewBox="0 0 24 24"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 20 12 16.5 6.5 20 8 13.5 3 9l6.5-.5z"/></svg></div>
+        <h3>Veneers &amp; Cosmetic Care</h3>
+        <p>Veneers and aesthetic treatments for a brighter, more confident smile.</p>
+      </div>
+      <div class="svc">
+        <div class="dot"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/></svg></div>
+        <h3>Kids Dentistry</h3>
+        <p>Patient, playful first visits that teach children the dentist is nothing to fear.</p>
+      </div>
+      <div class="svc">
+        <div class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg></div>
+        <h3>Root Canal &amp; Gum Care</h3>
+        <p>Gentle endodontics and periodontal care that save teeth and stop pain, calmly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="insurance">
+  <div class="wrap">
+    <div class="big">Most insurance plans accepted</div>
+    <h2>Good care should be easy to afford</h2>
+    <p>We work with most major insurance companies and offer competitive pricing with flexible scheduling. Ask us about your plan when you call.</p>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Reviews</div>
+      <h2>4.8 stars from 126 patients</h2>
+      <p>Our patients notice the difference a gentle team makes.</p>
+    </div>
+    <div class="review-cards">
+      <div class="rcard">
+        <div class="stars">★★★★★</div>
+        <p>"Keep smiles great." That is the clinic's own motto, and with most insurance plans accepted, great smiles stay affordable here.</p>
+        <b>Al Saad Dental Clinic listing</b>
+      </div>
+      <div class="rcard">
+        <div class="stars">★★★★★</div>
+        <p>"A leading dental care provider in Sharjah, dedicated to a comprehensive range of dental services in a comfortable and welcoming environment."</p>
+        <b>Doctify practice profile</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="k">Visit us</div>
+      <h2>Come say hello in Al Khan</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="card">
+        <h3>Opening Hours</h3>
+        <div class="hrow"><span>Sunday - Thursday</span><b>12:00 PM - 8:00 PM</b></div>
+        <div class="hrow"><span>Saturday</span><b>12:00 PM - 8:00 PM</b></div>
+        <div class="hrow"><span>Friday</span><b>Closed</b></div>
+      </div>
+      <div class="card">
+        <h3>Book an Appointment</h3>
+        <ul class="clist">
+          <li>Call or WhatsApp: <a href="tel:+971505007764">+971 50 500 7764</a></li>
+          <li>Landline: <a href="tel:+97165277255">06 527 7255</a></li>
+          <li>Office 204, 2nd Floor, Al Saad Tower 1, Al Taawun Street, Al Khan, Sharjah</li>
+        </ul>
+        <a class="btn" href="tel:+971505007764">Book Your Visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Al Saad Dental Clinic</strong><br>Office 204, Al Saad Tower 1, Al Taawun Street, Al Khan, Sharjah</div>
+    <div>4.8 rating from 126 Google reviews<br><a href="tel:+971505007764" style="color:#fff;font-weight:700">+971 50 500 7764</a></div>
+  </div>
+</footer>
+</body>
+</html>
