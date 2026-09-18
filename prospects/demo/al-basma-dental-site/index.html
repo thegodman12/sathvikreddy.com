@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Al Basma Dental Clinic | Dentist in Nuaimiya 1, Ajman</title>
-<meta name="description" content="Al Basma Dental Clinic, Kuwait Street, Nuaimiya 1, Ajman. 4.6 stars from 73 Google reviews. Trusted neighborhood dentistry." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='none' stroke='%23C98F2F' stroke-width='2'/%3E%3Cpath d='M32 14c-5.2 0-6.8 2.4-10.4 2.4-4.4 0-6.6-2-8.6-.4-1.8 1.6-1 5.2.4 10.2 1.4 5.2 3.2 10 4.2 14.8.8 4 1.6 8.8 4.4 8.8 2.6 0 2-5.2 3.2-8.4.8-2.4 2-5.4 4.4-5.4s3.6 3 4.4 5.4c1.2 3.2.6 8.4 3.2 8.4 2.8 0 3.6-4.8 4.4-8.8 1-4.8 2.8-9.6 4.2-14.8 1.4-5 2.2-8.6.4-10.2-2-1.6-4.2.4-8.6.4-3.6 0-5.2-2.4-10.4-2.4z' fill='%233A2F28'/%3E%3C/svg%3E" />
+<title>Al Basma Dental Clinic | Female-run dentist in Nuaimiya 1, Ajman</title>
+<meta name="description" content="Al Basma Dental Clinic, Kuwait Street, Nuaimiya 1, Ajman. Female-run, established 2007. 4.6 stars from 73 Google reviews." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23C98F2F'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23FAF6EF' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E" />
 <style>
   :root{
     --sand:#FAF6EF; --sand-deep:#F1E9DB; --ink:#3A2F28; --ink-soft:#6B5D50;
@@ -18,11 +18,13 @@
   header.top{position:sticky;top:0;z-index:20;background:rgba(250,246,239,.97);
     border-bottom:1px solid var(--sand-deep)}
   .top-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
-  .brand img{width:38px;height:38px;display:block}
-  .brand b{font-size:1.05rem;font-weight:700}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+  .brand .monogram{width:42px;height:42px;border-radius:50%;background:var(--amber);
+    color:var(--sand);font-size:1.15rem;display:flex;align-items:center;justify-content:center;
+    font-weight:400;letter-spacing:.02em;flex:0 0 auto}
+  .brand b{font-size:1.08rem;font-weight:700;display:block;line-height:1.25}
   .brand small{display:block;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    font-size:.68rem;color:var(--ink-soft);line-height:1.2}
+    font-size:.68rem;color:var(--ink-soft);line-height:1.3;letter-spacing:.06em}
   .nav a{display:inline-block;margin-left:16px;font-size:.83rem;color:var(--ink);
     text-decoration:none;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-weight:600}
   .btn{display:inline-block;background:var(--amber);color:#fff;text-decoration:none;
@@ -30,6 +32,7 @@
     padding:14px 30px;border-radius:2px;border:0;cursor:pointer;font-size:.95rem;letter-spacing:.03em}
   .btn:hover{background:var(--amber-deep)}
   .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn.small{padding:11px 22px;font-size:.85rem}
   .hero{padding:72px 0 64px;text-align:center}
   .rule{width:56px;height:2px;background:var(--amber);margin:0 auto 22px;border:0}
   .kicker{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:.72rem;
@@ -37,7 +40,7 @@
   h1{font-size:2.6rem;line-height:1.15;margin:.5em 0 .35em;font-weight:400;letter-spacing:.01em}
   h1 em{font-style:italic;color:var(--amber-deep)}
   h2{font-size:1.8rem;font-weight:400;margin:0 0 .5em}
-  p.lead{font-size:1.08rem;color:var(--ink-soft);max-width:32em;margin:0 auto}
+  p.lead{font-size:1.08rem;color:var(--ink-soft);max-width:34em;margin:0 auto}
   .rating{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:.88rem;
     margin-top:18px;color:var(--ink-soft)}
   .stars{color:var(--amber);letter-spacing:.15em}
@@ -57,6 +60,16 @@
   .stat b{display:block;font-size:1.9rem;font-weight:400;color:var(--amber-deep)}
   .stat span{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:.78rem;
     letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+  .about-grid{display:grid;grid-template-columns:1fr;gap:26px;margin-top:30px}
+  .about-note{border:1px solid var(--sand-deep);background:var(--white);padding:26px 28px}
+  .about-note h3{font-size:1.05rem;margin:0 0 .6em;font-weight:600}
+  .about-note p{margin:0;color:var(--ink-soft);font-size:.96rem}
+  .ig-panel{text-align:center;border:1px solid var(--sand-deep);background:var(--white);
+    padding:44px 30px;margin-top:30px}
+  .ig-handle{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:1.15rem;
+    font-weight:700;margin:.4em 0 .2em}
+  .ig-followers{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:.85rem;
+    color:var(--ink-soft);margin:0 0 22px}
   .visit-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:30px;
     border-top:1px solid var(--sand-deep)}
   .visit-cell{padding:24px 0;border-bottom:1px solid var(--sand-deep)}
@@ -76,6 +89,7 @@
     .visit-grid{grid-template-columns:1fr 1fr 1fr;gap:0}
     .visit-cell{padding:24px 30px;border-left:1px solid var(--sand-deep)}
     .visit-cell:first-child{border-left:0;padding-left:0}
+    .about-grid{grid-template-columns:1fr 1fr}
     h1{font-size:3.4rem}
   }
 </style>
@@ -84,11 +98,12 @@
 <header class="top">
   <div class="wrap top-in">
     <a class="brand" href="#top">
-      <img alt="Al Basma Dental Clinic" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='none' stroke='%23C98F2F' stroke-width='2'/%3E%3Cpath d='M32 14c-5.2 0-6.8 2.4-10.4 2.4-4.4 0-6.6-2-8.6-.4-1.8 1.6-1 5.2.4 10.2 1.4 5.2 3.2 10 4.2 14.8.8 4 1.6 8.8 4.4 8.8 2.6 0 2-5.2 3.2-8.4.8-2.4 2-5.4 4.4-5.4s3.6 3 4.4 5.4c1.2 3.2.6 8.4 3.2 8.4 2.8 0 3.6-4.8 4.4-8.8 1-4.8 2.8-9.6 4.2-14.8 1.4-5 2.2-8.6.4-10.2-2-1.6-4.2.4-8.6.4-3.6 0-5.2-2.4-10.4-2.4z' fill='%233A2F28'/%3E%3C/svg%3E" />
-      <span><b>Al Basma Dental Clinic</b><small>Nuaimiya 1, Ajman</small></span>
+      <span class="monogram">AB</span>
+      <span><b>Al Basma Dental Clinic</b><small>NUAIMIYA 1, AJMAN</small></span>
     </a>
     <nav class="nav">
       <a href="#care">Care</a>
+      <a href="#about">About</a>
       <a href="#visit">Visit</a>
       <a href="https://wa.me/971559883239">Book now</a>
     </nav>
@@ -98,9 +113,9 @@
 <div class="hero" id="top">
   <div class="wrap">
     <hr class="rule" />
-    <span class="kicker">Dentistry in Nuaimiya, Ajman</span>
+    <span class="kicker">A female-run dental clinic in Nuaimiya, Ajman</span>
     <h1>Quiet, careful care<br />for <em>your smile.</em></h1>
-    <p class="lead">Al Basma Dental Clinic is a trusted neighborhood dental clinic on Kuwait Street. Honest advice, gentle treatment, no rush.</p>
+    <p class="lead">Al Basma Dental Clinic sits on Kuwait Street, run by women, caring for Ajman families since 2007. Honest advice. Gentle treatment. No rush.</p>
     <p class="rating"><span class="stars">★★★★★</span>&nbsp; 4.6 on Google, from 73 patient reviews</p>
     <div class="cta-row">
       <a class="btn" href="https://wa.me/971559883239">Book on WhatsApp</a>
@@ -114,7 +129,7 @@
   <div class="wrap">
     <hr class="rule" style="margin:0 0 22px" />
     <h2>What we treat</h2>
-    <p class="lead" style="margin:0;max-width:36em">Complete general dentistry for the whole family. Call us for anything not listed here, we are happy to advise.</p>
+    <p class="lead" style="margin:0;max-width:36em">Complete general dentistry for the whole family. Call us for anything not listed here. We are happy to advise.</p>
     <div class="svc">
       <div class="svc-row"><h3>Check-ups and consultations</h3><p>Thorough examination and honest advice about your dental health.</p></div>
       <div class="svc-row"><h3>Cleaning and polishing</h3><p>Remove plaque and stains, keep gums healthy.</p></div>
@@ -123,10 +138,46 @@
       <div class="svc-row"><h3>Extractions</h3><p>Gentle, safe tooth removal when a tooth cannot be saved.</p></div>
       <div class="svc-row"><h3>Crowns and bridges</h3><p>Restore broken or missing teeth with strong, natural-looking replacements.</p></div>
     </div>
+  </div>
+</section>
+
+<hr class="divider" />
+<section id="about">
+  <div class="wrap">
+    <hr class="rule" style="margin:0 0 22px" />
+    <h2>Nearly two decades in Ajman</h2>
+    <p class="lead" style="margin:0;max-width:36em">A female-run clinic that has looked after Nuaimiya smiles since 2007. Patients rate us 4.6 stars across 73 Google reviews.</p>
     <div class="stats">
+      <div class="stat"><b>2007</b><span>Established in Ajman</span></div>
       <div class="stat"><b>4.6</b><span>Google rating</span></div>
       <div class="stat"><b>73</b><span>Patient reviews</span></div>
-      <div class="stat"><b>6 days</b><span>Open every week</span></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-note">
+        <h3>Run by women, trusted by families</h3>
+        <p>Our clinic is female-run. Many of our patients chose us years ago and kept coming back. That is the kind of trust we work to earn, one visit at a time.</p>
+      </div>
+      <div class="about-note">
+        <h3>A website your patients can finally find</h3>
+        <p>You already own albasmadental.com. Right now it shows an empty under construction page. This is what it could become. Your address, hours, services and booking in one clean place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+<section id="follow">
+  <div class="wrap">
+    <hr class="rule" style="margin:0 0 22px" />
+    <h2>Follow the clinic</h2>
+    <div class="ig-panel">
+      <span class="kicker">Instagram</span>
+      <div class="ig-handle">@albasmadental</div>
+      <p class="ig-followers">722 followers &middot; Al Basma Dental Clinic Ajman</p>
+      <a class="btn small" href="https://www.instagram.com/albasmadental/" target="_blank" rel="noopener">Follow on Instagram</a>
+      <p style="margin:18px 0 0;font-size:.85rem;color:var(--ink-soft);font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif">
+        Also on <a href="https://www.facebook.com/AlBasmaclinic/" target="_blank" rel="noopener" style="color:var(--ink);font-weight:700">Facebook</a>
+      </p>
     </div>
   </div>
 </section>
@@ -145,15 +196,16 @@
       <div class="visit-cell">
         <h3>Book a visit</h3>
         <p>Landline: <a href="tel:+97167460088">+971 6 746 0088</a><br />
-        WhatsApp: <a href="https://wa.me/971559883239">+971 55 988 3239</a></p>
+        Mobile / WhatsApp: <a href="https://wa.me/971559883239">+971 55 988 3239</a><br />
+        Email: <a href="mailto:albasmadental@gmail.com">albasmadental@gmail.com</a></p>
         <div style="margin-top:16px"><a class="btn" href="https://wa.me/971559883239">Book on WhatsApp</a></div>
       </div>
       <div class="visit-cell">
         <h3>Hours</h3>
         <table class="hours">
-          <tr><td>Monday to Thursday</td><td>9:30 AM - 9:30 PM</td></tr>
+          <tr><td>Mon - Thu</td><td>9:30 AM - 9:30 PM</td></tr>
           <tr><td>Friday</td><td>Closed</td></tr>
-          <tr><td>Saturday and Sunday</td><td>9:30 AM - 9:30 PM</td></tr>
+          <tr><td>Sat - Sun</td><td>9:30 AM - 9:30 PM</td></tr>
         </table>
       </div>
     </div>
@@ -162,8 +214,8 @@
 
 <footer>
   <div class="wrap">
-    <span><b style="color:#fff">Al Basma Dental Clinic</b> &middot; Nuaimiya 1, Ajman</span>
-    <span>4.6 stars on Google, 73 reviews &middot; <a href="tel:+97167460088">+971 6 746 0088</a></span>
+    <span><b style="color:#fff">Al Basma Dental Clinic</b> &middot; Nuaimiya 1, Ajman &middot; Est. 2007</span>
+    <span>4.6 stars on Google, 73 reviews &middot; <a href="tel:+97167460088">+971 6 746 0088</a> &middot; <a href="mailto:albasmadental@gmail.com">albasmadental@gmail.com</a></span>
   </div>
 </footer>
 </body>
