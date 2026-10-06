@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karam Kundali | आपकी ज़िंदगी की हर मुश्किल का आसान समाधान</title>
+<meta name="description" content="100% पर्सनलाइज़्ड कर्म कुंडली। आपकी जन्म डिटेल से बनी। 10 साल का पूर्वानुमान, उपाय और 6 बोनस। आज सिर्फ ₹501।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#7B1E1E; --maroon-dark:#5C1414; --gold:#C9A227; --gold-light:#F5E6C4;
+  --cream:#FFF8E7; --paper:#FFFDF4; --ink:#2B2B2B; --muted:#6B5B4F; --green:#1E7B34;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Mukta',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+h1,h2,h3{line-height:1.35;color:var(--maroon)}
+.center{text-align:center}
+
+/* announcement */
+.announce{background:var(--gold);color:#3d2c00;text-align:center;font-weight:700;font-size:15px;padding:10px 16px;position:sticky;top:0;z-index:60}
+.announce a{color:#3d2c00;text-decoration:underline}
+
+/* hero */
+.hero{background:radial-gradient(1200px 600px at 50% -10%, #8f2323 0%, var(--maroon-dark) 60%, #4a0f0f 100%);color:#fff;padding:56px 0 72px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 12% 20%, rgba(201,162,39,.14) 0 90px, transparent 91px),
+  radial-gradient(circle at 88% 75%, rgba(201,162,39,.12) 0 120px, transparent 121px),
+  radial-gradient(circle at 75% 12%, rgba(201,162,39,.10) 0 70px, transparent 71px);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;border:1px solid var(--gold);color:var(--gold);font-weight:700;letter-spacing:2px;font-size:13px;padding:6px 16px;border-radius:999px;margin-bottom:18px}
+.hero h1{color:#fff;font-size:clamp(30px,4.6vw,50px);font-weight:800;margin-bottom:14px}
+.hero h1 .gold{color:var(--gold)}
+.hero .sub{font-size:18px;color:#f3e3c2;margin-bottom:20px;max-width:34em}
+.ticks{list-style:none;margin:0 0 24px}
+.ticks li{padding:7px 0 7px 34px;position:relative;font-size:17px;font-weight:500;color:#fdf6e3}
+.ticks li::before{content:"✓";position:absolute;left:0;top:7px;width:24px;height:24px;border-radius:50%;background:var(--gold);color:#3d2c00;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.price-row{display:flex;align-items:center;gap:14px;margin:6px 0 18px;flex-wrap:wrap}
+.price-now{font-size:44px;font-weight:800;color:#fff}
+.price-was{font-size:22px;color:#d9bfa8;text-decoration:line-through}
+.off{background:var(--gold);color:#3d2c00;font-weight:800;font-size:14px;padding:5px 12px;border-radius:8px}
+.btn{display:inline-block;background:linear-gradient(180deg,#f2cd4e,var(--gold) 60%,#b78f1c);color:#3d2c00;font-weight:800;font-size:19px;padding:16px 42px;border-radius:14px;text-decoration:none;border:none;cursor:pointer;position:relative;overflow:hidden;transition:transform .15s;animation:ctaGlow 2.2s infinite}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn.big{width:100%;text-align:center;font-size:21px}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:ctaShine 2.8s infinite}
+@keyframes ctaGlow{0%{box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 0 rgba(201,162,39,.55)}70%{box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 16px rgba(201,162,39,0)}100%{box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 0 0 rgba(201,162,39,0)}}
+@keyframes ctaShine{0%{left:-80%}55%{left:130%}100%{left:130%}}
+@media (prefers-reduced-motion:reduce){.btn,.btn::after{animation:none}}
+.micro{margin-top:12px;font-size:14px;color:#e8d5b5}
+.hero-art{display:flex;justify-content:center}
+.book{width:min(300px,72vw);aspect-ratio:3/4.1;position:relative;transform:perspective(1200px) rotateY(-16deg);transform-style:preserve-3d;filter:drop-shadow(24px 30px 30px rgba(0,0,0,.45))}
+.book .front{position:absolute;inset:0;border-radius:6px 12px 12px 6px;overflow:hidden;background:var(--maroon)}
+.book .front img{width:100%;height:100%;object-fit:cover}
+.book .spine{position:absolute;top:0;bottom:0;left:-22px;width:22px;background:linear-gradient(90deg,#3d0c0c,#6b1a1a);transform:rotateY(84deg);transform-origin:right;border-radius:4px 0 0 4px}
+
+/* trust strip */
+.strip{background:#fff;border-bottom:1px solid #eee0c8;padding:18px 0}
+.strip .wrap{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;font-weight:600;color:var(--maroon);font-size:15px}
+.strip span{display:flex;align-items:center;gap:8px}
+
+/* pain */
+.pain{background:var(--cream)}
+.sec-kicker{color:#a07d14;font-weight:700;letter-spacing:1.5px;font-size:13px;text-transform:uppercase}
+.sec-title{font-size:clamp(26px,3.6vw,38px);font-weight:800;margin:8px 0 10px}
+.sec-sub{color:var(--muted);font-size:17px;max-width:44em;margin:0 auto 34px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #f0e2c4;border-radius:16px;padding:0;overflow:hidden;box-shadow:0 6px 18px rgba(123,30,30,.06)}
+.card .ph{height:180px;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.card:hover .ph img{transform:scale(1.06)}
+.card .tx{padding:20px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{font-size:15px;color:var(--muted)}
+.peek-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.peek-grid figure{background:#fff;border:1px solid #f0e2c4;border-radius:14px;overflow:hidden;box-shadow:0 10px 26px rgba(123,30,30,.10)}
+.peek-grid img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top}
+.peek-grid figcaption{padding:12px 14px;font-weight:700;color:var(--maroon);font-size:15px}
+.avatar{display:inline-flex;width:38px;height:38px;border-radius:50%;background:var(--maroon);color:#fff;font-weight:800;align-items:center;justify-content:center;margin-right:10px;font-size:15px;flex:0 0 38px}
+.testi .who{display:flex;align-items:center}
+
+/* difference */
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px}
+.diff-box{border-radius:18px;padding:30px}
+.diff-box.bad{background:#fff;border:2px dashed #d8c6a8}
+.diff-box.good{background:linear-gradient(180deg,#fffdf6,#fff6df);border:2px solid var(--gold);box-shadow:0 12px 30px rgba(201,162,39,.18)}
+.diff-box h3{font-size:21px;margin-bottom:14px}
+.diff-box ul{list-style:none}
+.diff-box li{padding:8px 0 8px 32px;position:relative;font-size:16px}
+.diff-box.bad li::before{content:"✕";position:absolute;left:0;color:#b04848;font-weight:800}
+.diff-box.good li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+
+/* steps */
+.steps{background:var(--maroon);color:#fff}
+.steps h2{color:#fff}
+.steps .sec-sub{color:#e8d5b5}
+.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:10px}
+.step{background:rgba(255,255,255,.07);border:1px solid rgba(201,162,39,.4);border-radius:18px;padding:30px 24px;text-align:center}
+.step .num{width:52px;height:52px;border-radius:50%;background:var(--gold);color:#3d2c00;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.step h3{color:#fff;font-size:19px;margin-bottom:8px}
+.step p{color:#f0dfc0;font-size:15px}
+
+/* inside */
+.inside-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px;text-align:left}
+.inside-list .item{background:#fff;border:1px solid #f0e2c4;border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.inside-list .n{flex:0 0 34px;height:34px;border-radius:10px;background:var(--maroon);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.inside-list p{font-size:15px}
+.inside-list b{color:var(--maroon)}
+
+/* bonuses */
+.bonuses{background:var(--cream)}
+.bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.bonus{background:#fff;border-radius:16px;overflow:hidden;border:1px solid #f0e2c4;box-shadow:0 6px 18px rgba(123,30,30,.06)}
+.bonus .tag{background:var(--maroon);color:var(--gold-light);font-weight:800;font-size:13px;letter-spacing:1px;padding:8px 16px}
+.bonus .body{padding:20px}
+.bonus h3{font-size:18px;margin-bottom:6px}
+.bonus p{font-size:14.5px;color:var(--muted)}
+.bonus .val{color:var(--green);font-weight:700;font-size:14px;margin-top:8px}
+
+/* testimonials */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.testi{background:#fff;border:1px solid #f0e2c4;border-radius:16px;padding:24px;font-size:15px}
+.testi .stars{color:var(--gold);font-size:18px;letter-spacing:2px;margin-bottom:10px}
+.testi .who{margin-top:14px;font-weight:700;color:var(--maroon)}
+.testi .role{font-size:13px;color:var(--muted)}
+
+/* price */
+.pricing{background:linear-gradient(180deg,var(--cream),#fff)}
+.price-card{max-width:560px;margin:26px auto 0;background:#fff;border:3px solid var(--gold);border-radius:22px;padding:40px 36px;text-align:center;box-shadow:0 20px 50px rgba(123,30,30,.14);position:relative}
+.price-card .ribbon{position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:var(--maroon);color:#fff;font-weight:800;font-size:14px;padding:8px 22px;border-radius:999px;white-space:nowrap}
+.price-card h3{font-size:24px;margin-bottom:6px}
+.inclist{list-style:none;text-align:left;margin:20px 0}
+.inclist li{padding:8px 0 8px 32px;position:relative;font-size:16px;border-bottom:1px dashed #eee0c8}
+.inclist li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+.fine{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* faq */
+.faq{max-width:760px;margin:26px auto 0;text-align:left}
+.faq details{background:#fff;border:1px solid #f0e2c4;border-radius:12px;margin-bottom:12px;padding:18px 20px}
+.faq summary{font-weight:700;color:var(--maroon);cursor:pointer;font-size:17px;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--gold);font-size:22px;font-weight:800}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;font-size:15.5px;color:var(--ink)}
+
+/* final */
+.final{background:radial-gradient(900px 500px at 50% 0%, #8f2323 0%, var(--maroon-dark) 70%);color:#fff;text-align:center}
+.final h2{color:#fff;font-size:clamp(26px,3.6vw,38px);margin-bottom:12px}
+.final p{color:#f0dfc0;max-width:36em;margin:0 auto 26px;font-size:17px}
+
+/* footer */
+footer{background:#2b0d0d;color:#c9b8a6;padding:44px 0 110px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+footer h4{color:var(--gold);margin-bottom:10px;font-size:16px}
+footer a{color:#e8d5b5}
+.disclaimer{margin-top:24px;font-size:12.5px;color:#9a8474;grid-column:1/-1;border-top:1px solid #4a2020;padding-top:18px}
+
+/* atmospheric section backgrounds */
+.bg-bokeh{background:linear-gradient(rgba(255,248,231,.90),rgba(255,248,231,.90)),url('img/bg-bokeh.webp') center/cover}
+.bg-mandala{background:linear-gradient(rgba(255,253,244,.93),rgba(255,253,244,.93)),url('img/bg-mandala.webp') center/cover}
+.bg-diya{background:linear-gradient(rgba(92,20,20,.90),rgba(62,12,12,.94)),url('img/bg-diya.webp') center/cover}
+.bg-sunrise{background:linear-gradient(rgba(74,15,15,.80),rgba(40,9,9,.90)),url('img/bg-sunrise.webp') center/cover}
+
+/* sticky mobile cta */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:2px solid var(--gold);padding:10px 14px;display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 20px rgba(0,0,0,.12)}
+.sticky-cta .p{font-weight:800;color:var(--maroon);font-size:18px}
+.sticky-cta .p small{display:block;font-size:12px;color:var(--muted);text-decoration:line-through;font-weight:500}
+.sticky-cta .btn{padding:12px 26px;font-size:16px}
+
+@media(max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;text-align:center}
+  .ticks{text-align:left;max-width:26em;margin:0 auto 24px}
+  .price-row{justify-content:center}
+  .hero-art{order:-1}
+  .book{width:min(230px,64vw)}
+  .cards,.step-grid,.bonus-grid,.testi-grid,.peek-grid{grid-template-columns:1fr}
+  .diff-grid,.inside-list{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+  .sticky-cta{display:flex}
+  section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">धमाका छूट: ₹1,999 वाली पर्सनलाइज़्ड कुंडली <a href="#buy">आज सिर्फ ₹501 में पाएं</a></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">KARMIC SAMADHAN</span>
+      <h1>आपकी ज़िंदगी की हर मुश्किल का <span class="gold">आसान समाधान</span></h1>
+      <p class="sub">यह कोई आम किताब नहीं। यह <b>आपकी अपनी कुंडली</b> है, आपकी जन्म डिटेल से बनी, अगले 10 साल के पूर्वानुमान और उपायों के साथ। आपकी भाषा में।</p>
+      <ul class="ticks">
+        <li>ना महंगे रत्न, ना मुश्किल उपाय</li>
+        <li>ना कोई अंधविश्वास, सिर्फ आसान समाधान</li>
+        <li>100% पर्सनलाइज़्ड: आपका नाम, आपकी दशा, आपके उपाय</li>
+        <li>हिंदी या English, आपकी पसंद की भाषा में</li>
+      </ul>
+      <div class="price-row">
+        <span class="price-now">₹501</span>
+        <span class="price-was">₹1,999</span>
+        <span class="off">75% OFF</span>
+      </div>
+      <a class="btn" href="#buy" data-buy>अपनी कुंडली पाएं</a>
+      <p class="micro">24 घंटे में WhatsApp + Email पर डिलीवरी &nbsp;•&nbsp; Secure Payment</p>
+    </div>
+    <div class="hero-art">
+      <div class="book">
+        <div class="spine"></div>
+        <div class="front"><img src="cover.png" alt="Karam Kundali book"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <span>⚡ 24 घंटे में डिलीवरी</span>
+    <span>📥 लाइफटाइम डाउनलोड</span>
+    <span>🔒 100% सिक्योर पेमेंट</span>
+    <span>🎯 100% पर्सनलाइज़्ड</span>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<section style="padding-top:40px">
+  <div class="wrap center">
+    <div class="sec-kicker">पहले यह देखें</div>
+    <h2 class="sec-title">2 मिनट में समझें, यह कैसे काम करता है</h2>
+    <div style="max-width:760px;margin:26px auto 0;border-radius:18px;overflow:hidden;box-shadow:0 18px 44px rgba(123,30,30,.20);border:3px solid var(--gold)">
+      <div style="position:relative;padding-top:56.25%">
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/717853197?h=2eb02a9d77" style="position:absolute;inset:0" width="100%" height="100%" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain bg-bokeh">
+  <div class="wrap center">
+    <div class="sec-kicker">क्या आप भी...</div>
+    <h2 class="sec-title">इन समस्याओं से जूझ रहे हैं?</h2>
+    <p class="sec-sub">अगर इनमें से एक भी बात आप पर लागू होती है, तो यह कुंडली आपके लिए ही बनी है।</p>
+    <div class="cards" style="text-align:left">
+      <div class="card"><div class="ph"><img src="img/pain-business.webp" alt="Business problems" loading="lazy"></div><div class="tx"><h3>Business Problems</h3><p>बिज़नेस में लगातार नुकसान? ग्रोथ रुक गई है और समझ नहीं आ रहा क्या करें?</p></div></div>
+      <div class="card"><div class="ph"><img src="img/pain-health.webp" alt="Health problems" loading="lazy"></div><div class="tx"><h3>Health Problems</h3><p>सेहत की परेशानियों से थक चुके हैं? हर इलाज आज़मा लिया, आराम नहीं मिला?</p></div></div>
+      <div class="card"><div class="ph"><img src="img/pain-relationship.webp" alt="Relationship problems" loading="lazy"></div><div class="tx"><h3>Relationship Problems</h3><p>पार्टनर से दूरियां बढ़ रही हैं? रिश्तों में वह प्यार नहीं रहा जो पहले था?</p></div></div>
+      <div class="card"><div class="ph"><img src="img/pain-career.webp" alt="Career problems" loading="lazy"></div><div class="tx"><h3>Career Problems</h3><p>ज़िंदगी में कुछ बड़ा करना है, पर सही दिशा नहीं मिल रही? कौन सा करियर आपके लिए है?</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section class="bg-mandala">
+  <div class="wrap center">
+    <div class="sec-kicker">सबसे बड़ा फर्क</div>
+    <h2 class="sec-title">यह कोई आम PDF किताब नहीं है</h2>
+    <p class="sec-sub">बाज़ार में बिकने वाली ज़्यादातर कुंडलियां सबके लिए एक जैसी होती हैं। हमारी हर कुंडली सिर्फ एक इंसान के लिए बनती है: आपके लिए।</p>
+    <div class="diff-grid" style="text-align:left">
+      <div class="diff-box bad">
+        <h3>❌ आम कुंडली किताबें</h3>
+        <ul>
+          <li>सबके लिए एक जैसा generic कंटेंट</li>
+          <li>आपका नाम तक नहीं होता</li>
+          <li>आपकी दशा का कोई ज़िक्र नहीं</li>
+          <li>समस्याएं बताती हैं, समाधान नहीं</li>
+        </ul>
+      </div>
+      <div class="diff-box good">
+        <h3>✅ आपकी Karam Kundali</h3>
+        <ul>
+          <li>आपके नाम, जन्म तिथि, समय, स्थान से बनी</li>
+          <li>आपका असली लग्न चार्ट और ग्रह स्थिति</li>
+          <li>आपकी वर्तमान दशा का विश्लेषण</li>
+          <li>हर समस्या के साथ उसका विशेष उपाय</li>
+          <li>अगले 10 साल का पूर्वानुमान</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps bg-diya">
+  <div class="wrap center">
+    <div class="sec-kicker" style="color:var(--gold)">इतना आसान</div>
+    <h2 class="sec-title">सिर्फ 3 स्टेप में पाएं अपनी कुंडली</h2>
+    <p class="sec-sub">कोई फॉर्म भरने का झंझट नहीं। कोई इंतज़ार नहीं।</p>
+    <div class="step-grid">
+      <div class="step"><div class="num">1</div><h3>₹501 में ऑर्डर करें</h3><p>नीचे दिए बटन से सिक्योर पेमेंट करें। पेमेंट कन्फर्म होते ही आपको WhatsApp लिंक मिलेगा।</p></div>
+      <div class="step"><div class="num">2</div><h3>Birth details भेजें</h3><p>WhatsApp पर अपना नाम, जन्म तिथि, जन्म समय और जन्म स्थान भेज दें। बस इतना ही चाहिए।</p></div>
+      <div class="step"><div class="num">3</div><h3>कुंडली पाएं</h3><p>24 घंटे के अंदर आपकी पर्सनलाइज़्ड 10-साल की कुंडली PDF WhatsApp और Email पर। लाइफटाइम एक्सेस।</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIDE -->
+<section class="bg-mandala">
+  <div class="wrap center">
+    <div class="sec-kicker">अंदर क्या मिलेगा</div>
+    <h2 class="sec-title">आपकी कुंडली में 7 खास सेक्शन</h2>
+    <p class="sec-sub">हर सेक्शन आपकी जन्म डिटेल से personally तैयार।</p>
+    <div class="inside-list">
+      <div class="item"><div class="n">1</div><p><b>लग्न और व्यक्तित्व:</b> आपका स्वभाव, ताकत और नेतृत्व क्षमता।</p></div>
+      <div class="item"><div class="n">2</div><p><b>दशा, समय का नक्शा:</b> अभी कौन सी दशा चल रही है और इसका मतलब।</p></div>
+      <div class="item"><div class="n">3</div><p><b>करियर और धन:</b> आपके लिए सही क्षेत्र और धन के योग।</p></div>
+      <div class="item"><div class="n">4</div><p><b>स्वास्थ्य:</b> सेहत की प्रवृत्ति और बचाव के उपाय।</p></div>
+      <div class="item"><div class="n">5</div><p><b>विवाह और संबंध:</b> रिश्तों का विश्लेषण और सलाह।</p></div>
+      <div class="item"><div class="n">6</div><p><b>विशेष उपाय:</b> आपकी दशा के अनुसार आसान, घरेलू उपाय।</p></div>
+      <div class="item"><div class="n">7</div><p><b>हर मुश्किल का समाधान:</b> हर समस्या के साथ उसका तय उपाय, एक जगह।</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PEEK INSIDE -->
+<section style="padding-top:20px">
+  <div class="wrap center">
+    <div class="sec-kicker">झलक देखिए</div>
+    <h2 class="sec-title">रिपोर्ट के अंदर क्या है, खुद देखिए</h2>
+    <p class="sec-sub">यह असली कुंडली के पन्ने हैं। आपकी कुंडली भी बिल्कुल इसी तरह, आपकी डिटेल के साथ बनेगी।</p>
+    <div class="peek-grid" style="text-align:left">
+      <figure><img src="img/peek-chart.png" alt="Lagna chart page" loading="lazy"><figcaption>आपका लग्न चार्ट और ग्रह स्थिति</figcaption></figure>
+      <figure><img src="img/peek-dasha.png" alt="Dasha timeline page" loading="lazy"><figcaption>दशा टाइमलाइन और वर्तमान काल</figcaption></figure>
+      <figure><img src="img/peek-samadhan.png" alt="Solutions page" loading="lazy"><figcaption>हर मुश्किल का समाधान</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- BONUSES -->
+<section class="bonuses">
+  <div class="wrap center">
+    <div class="sec-kicker">आज के ऑर्डर पर FREE</div>
+    <h2 class="sec-title">6 बोनस, बिल्कुल मुफ्त</h2>
+    <p class="sec-sub">कुंडली के साथ ये 6 रिपोर्ट भी पाएं। कोई extra चार्ज नहीं।</p>
+    <div class="bonus-grid" style="text-align:left">
+      <div class="bonus"><div class="tag">BONUS 1</div><div class="body"><h3>विवाह एवं संबंध समाधान</h3><p>Love या arrange marriage, रिश्तों की हर उलझन का समाधान।</p><div class="val">मूल्य ₹499 — FREE</div></div></div>
+      <div class="bonus"><div class="tag">BONUS 2</div><div class="body"><h3>अंकशास्त्र रिपोर्ट</h3><p>आपका शुभ अंक, शुभ नाम और सफलता के अंक।</p><div class="val">मूल्य ₹399 — FREE</div></div></div>
+      <div class="bonus"><div class="tag">BONUS 3</div><div class="body"><h3>रत्न सुझाव</h3><p>आपकी कुंडली के अनुसार सबसे उपयुक्त रत्न।</p><div class="val">मूल्य ₹499 — FREE</div></div></div>
+      <div class="bonus"><div class="tag">BONUS 4</div><div class="body"><h3>स्वास्थ्य पूर्वानुमान</h3><p>सेहत की प्रवृत्ति और बचाव के उपाय।</p><div class="val">मूल्य ₹399 — FREE</div></div></div>
+      <div class="bonus"><div class="tag">BONUS 5</div><div class="body"><h3>अगले 10 साल के उपाय</h3><p>आने वाली हर मुश्किल से बचने के पहले से उपाय।</p><div class="val">मूल्य ₹799 — FREE</div></div></div>
+      <div class="bonus"><div class="tag">BONUS 6</div><div class="body"><h3>शिक्षा, करियर, धन</h3><p>पढ़ाई, करियर और धन का पूरा रोडमैप।</p><div class="val">मूल्य ₹499 — FREE</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="bg-bokeh">
+  <div class="wrap center">
+    <div class="sec-kicker">लोग क्या कहते हैं</div>
+    <h2 class="sec-title">ग्राहक समीक्षाएं</h2>
+    <div class="testi-grid" style="text-align:left">
+      <!-- SAMPLE: replace with real customer review before launch -->
+      <div class="testi"><div class="stars">★★★★★</div><p>"मेरी कुंडली में जो दशा लिखी थी, वही मेरे करियर में हुआ। उपाय आसान थे, मैंने तुरंत शुरू कर दिए। पैसे वसूल।"</p><div class="who"><span class="avatar">AS</span><span>Aditya Sharma</span></div><div class="role">Small Business Owner</div></div>
+      <div class="testi"><div class="stars">★★★★★</div><p>"मैंने सोचा था सबके लिए एक जैसी होगी, पर मेरा नाम, मेरी birth details, सब कुछ मेरा था। पहली बार किसी कुंडली ने मुझे सच में समझा।"</p><div class="who"><span class="avatar">RK</span><span>Rakes Kumawat</span></div><div class="role">College Student</div></div>
+      <div class="testi"><div class="stars">★★★★★</div><p>"24 घंटे में WhatsApp पर मिल गई। उपाय इतने आसान कि रोज़ कर पा रही हूं। रिश्तों वाला सेक्शन तो बिल्कुल सटीक था।"</p><div class="who"><span class="avatar">PV</span><span>Priya Verma</span></div><div class="role">Teacher</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="buy">
+  <div class="wrap center">
+    <div class="sec-kicker">आज की डील</div>
+    <h2 class="sec-title">अपनी Karam Kundali पाएं</h2>
+    <div class="price-card">
+      <div class="ribbon">75% छूट — सिर्फ आज</div>
+      <h3>Personalized 10-Year Karam Kundali</h3>
+      <div class="price-row" style="justify-content:center;margin:14px 0">
+        <span class="price-now" style="color:var(--maroon)">₹501</span>
+        <span class="price-was">₹1,999</span>
+      </div>
+      <ul class="inclist">
+        <li>आपकी birth details से 100% personalized कुंडली PDF</li>
+        <li>अगले 10 साल का पूर्वानुमान और उपाय</li>
+        <li>6 बोनस रिपोर्ट (कुल मूल्य ₹3,094) — FREE</li>
+        <li>24 घंटे में WhatsApp + Email डिलीवरी</li>
+        <li>लाइफटाइम डाउनलोड एक्सेस</li>
+        <li>Birth details में गलती? एक बार FREE correction</li>
+      </ul>
+      <a class="btn big" href="#" data-buy>अभी ऑर्डर करें — ₹501</a>
+      <p class="fine">🔒 100% सिक्योर पेमेंट &nbsp;•&nbsp; पेमेंट के तुरंत बाद WhatsApp लिंक मिलेगा</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-bokeh">
+  <div class="wrap center">
+    <div class="sec-kicker">सवाल जवाब</div>
+    <h2 class="sec-title">अक्सर पूछे जाने वाले सवाल</h2>
+    <div class="faq">
+      <details><summary>Birth details कैसे भेजूं?</summary><p>पेमेंट के बाद आपको WhatsApp लिंक मिलेगा। उस पर अपना नाम, जन्म तिथि, जन्म समय और जन्म स्थान भेज दें। बस।</p></details>
+      <details><summary>कुंडली मिलने में कितना समय लगेगा?</summary><p>Birth details मिलने के 24 घंटे के अंदर आपकी personalized कुंडली PDF WhatsApp और Email दोनों पर भेज दी जाएगी।</p></details>
+      <details><summary>मुझे अपना जन्म समय नहीं पता, तो?</summary><p>कोई बात नहीं। जितना याद हो उतना भेजें। समय न पता होने पर चंद्र कुंडली आधारित विश्लेषण दिया जाता है।</p></details>
+      <details><summary>कुंडली किस भाषा में मिलेगी?</summary><p>आपकी पसंद: हिंदी या English। ऑर्डर के समय बता दें।</p></details>
+      <details><summary>क्या यह computer से बनी generic कुंडली है?</summary><p>नहीं। आपका लग्न चार्ट और दशा असली गणना से निकाली जाती है, और हर सेक्शन आपकी कुंडली के हिसाब से personally लिखा जाता है। दो लोगों की कुंडली एक जैसी नहीं हो सकती।</p></details>
+      <details><summary>पेमेंट सिक्योर है?</summary><p>हां, पेमेंट trusted payment gateway से होती है। आपके कार्ड या UPI की डिटेल हमारे पास नहीं आती।</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final bg-sunrise">
+  <div class="wrap">
+    <h2>आपकी ज़िंदगी का नक्शा, आपके हाथ में</h2>
+    <p>हर दिन बिना दिशा के बीत रहा है। ₹501 में जानें अगले 10 साल आपके लिए क्या लेकर आए हैं, और हर मुश्किल का समाधान पाएं।</p>
+    <a class="btn" href="#buy" data-buy>अपनी कुंडली पाएं — ₹501</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>संपर्क करें</h4>
+      <p>📞 +91-XXXXXXXXXX<br>✉️ youremail@example.com</p>
+    </div>
+    <div>
+      <h4>Karam Kundali</h4>
+      <p>आपकी ज़िंदगी की हर मुश्किल का आसान समाधान।<br>100% पर्सनलाइज़्ड जन्म कुंडली।</p>
+    </div>
+    <p class="disclaimer">अस्वीकरण: यह कुंडली ज्योतिषीय मार्गदर्शन हेतु है। इसे चिकित्सा, कानूनी या वित्तीय सलाह न मानें। महत्वपूर्ण निर्णयों में संबंधित विशेषज्ञ से परामर्श लें। © 2026 Karam Kundali. सर्वाधिकार सुरक्षित।</p>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <div class="p"><small>₹1,999</small>₹501</div>
+  <a class="btn" href="#buy" data-buy>अभी पाएं</a>
+</div>
+
+<script>
+// TODO: replace with your real payment link (Razorpay / Instamojo)
+var PAYMENT_URL = "#";
+// TODO: replace with your real WhatsApp number, e.g. "https://wa.me/919876543210"
+var WHATSAPP_URL = "https://wa.me/91XXXXXXXXXX";
+document.querySelectorAll('[data-buy]').forEach(function(el){
+  el.addEventListener('click', function(e){
+    if(PAYMENT_URL === "#"){ e.preventDefault(); document.getElementById('buy').scrollIntoView({behavior:'smooth'}); }
+    else { el.href = PAYMENT_URL; }
+  });
+});
+</script>
+</body>
+</html>
