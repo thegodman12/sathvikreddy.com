@@ -438,16 +438,39 @@ footer a{color:#e8d5b5}
   <a class="btn" href="#buy" data-buy>अभी पाएं</a>
 </div>
 
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
-// TODO: replace with your real payment link (Razorpay / Instamojo)
-var PAYMENT_URL = "#";
+// Razorpay live Key ID (publishable — safe in frontend code; never put the secret key here)
+var RAZORPAY_KEY_ID = "rzp_live_TkpUlMvmVBtvyr";
+var AMOUNT_PAISE = 50100; // Rs 501
 // TODO: replace with your real WhatsApp number, e.g. "https://wa.me/919876543210"
 var WHATSAPP_URL = "https://wa.me/91XXXXXXXXXX";
-document.querySelectorAll('[data-buy]').forEach(function(el){
-  el.addEventListener('click', function(e){
-    if(PAYMENT_URL === "#"){ e.preventDefault(); document.getElementById('buy').scrollIntoView({behavior:'smooth'}); }
-    else { el.href = PAYMENT_URL; }
+
+function openRazorpay(){
+  if(typeof Razorpay === "undefined"){ alert("Payment gateway load nahi ho raha. Apna internet check karke dobara try karein."); return; }
+  var rzp = new Razorpay({
+    key: RAZORPAY_KEY_ID,
+    amount: AMOUNT_PAISE,
+    currency: "INR",
+    name: "Karam Kundali",
+    description: "Personalized 10-Year Kundali",
+    theme: { color: "#7B1E1E" },
+    handler: function(resp){
+      var msg = "Namaste! Maine apni Karam Kundali order ki hai." +
+        "%0A%0APayment ID: " + resp.razorpay_payment_id +
+        "%0A%0AMeri birth details:%0AName: %0ADate of Birth: %0ATime of Birth: %0APlace of Birth: %0ALanguage (Hindi/English): ";
+      window.location.href = WHATSAPP_URL + "?text=" + msg;
+    },
+    modal: { ondismiss: function(){} }
   });
+  rzp.on("payment.failed", function(resp){
+    var d = (resp.error && resp.error.description) || "Please try again.";
+    alert("Payment failed: " + d);
+  });
+  rzp.open();
+}
+document.querySelectorAll("[data-buy]").forEach(function(el){
+  el.addEventListener("click", function(e){ e.preventDefault(); openRazorpay(); });
 });
 </script>
 </body>
