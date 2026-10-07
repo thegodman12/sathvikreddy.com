@@ -169,6 +169,18 @@ footer a{color:#e8d5b5}
 .bg-diya{background:linear-gradient(rgba(92,20,20,.90),rgba(62,12,12,.94)),url('img/bg-diya.webp') center/cover}
 .bg-sunrise{background:linear-gradient(rgba(74,15,15,.80),rgba(40,9,9,.90)),url('img/bg-sunrise.webp') center/cover}
 
+/* payment success modal */
+.pay-modal{position:fixed;inset:0;z-index:100;background:rgba(43,13,13,.78);display:flex;align-items:center;justify-content:center;padding:20px}
+.pay-modal[hidden]{display:none}
+.pay-box{background:#fff;border-radius:20px;max-width:480px;width:100%;padding:36px 30px;text-align:center;border:3px solid var(--gold);box-shadow:0 24px 60px rgba(0,0,0,.4);max-height:92vh;overflow:auto}
+.pay-tick{width:70px;height:70px;border-radius:50%;background:var(--green);color:#fff;font-size:36px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.pay-box h3{font-size:24px;margin-bottom:8px}
+.pay-box p{font-size:15.5px;margin-bottom:10px}
+.pay-id{background:var(--cream);border:1px dashed var(--gold);border-radius:10px;padding:10px;font-size:14px;margin-bottom:14px;word-break:break-all}
+.pay-email{font-weight:800;color:var(--maroon);font-size:19px;margin:6px 0 18px;word-break:break-all}
+.pay-box .btn{margin-bottom:6px}
+.pay-link{background:none;border:none;color:var(--maroon);font-weight:700;font-size:15px;cursor:pointer;text-decoration:underline;padding:8px}
+
 /* sticky mobile cta */
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:2px solid var(--gold);padding:10px 14px;display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 20px rgba(0,0,0,.12)}
 .sticky-cta .p{font-weight:800;color:var(--maroon);font-size:18px}
@@ -212,7 +224,7 @@ footer a{color:#e8d5b5}
         <span class="off">75% OFF</span>
       </div>
       <a class="btn" href="#buy" data-buy>अपनी कुंडली पाएं</a>
-      <p class="micro">24 घंटे में WhatsApp + Email पर डिलीवरी &nbsp;•&nbsp; Secure Payment</p>
+      <p class="micro">24 घंटे में Email पर डिलीवरी &nbsp;•&nbsp; Secure Payment</p>
     </div>
     <div class="hero-art">
       <div class="book">
@@ -298,9 +310,9 @@ footer a{color:#e8d5b5}
     <h2 class="sec-title">सिर्फ 3 स्टेप में पाएं अपनी कुंडली</h2>
     <p class="sec-sub">कोई फॉर्म भरने का झंझट नहीं। कोई इंतज़ार नहीं।</p>
     <div class="step-grid">
-      <div class="step"><div class="num">1</div><h3>₹501 में ऑर्डर करें</h3><p>नीचे दिए बटन से सिक्योर पेमेंट करें। पेमेंट कन्फर्म होते ही आपको WhatsApp लिंक मिलेगा।</p></div>
-      <div class="step"><div class="num">2</div><h3>Birth details भेजें</h3><p>WhatsApp पर अपना नाम, जन्म तिथि, जन्म समय और जन्म स्थान भेज दें। बस इतना ही चाहिए।</p></div>
-      <div class="step"><div class="num">3</div><h3>कुंडली पाएं</h3><p>24 घंटे के अंदर आपकी पर्सनलाइज़्ड 10-साल की कुंडली PDF WhatsApp और Email पर। लाइफटाइम एक्सेस।</p></div>
+      <div class="step"><div class="num">1</div><h3>₹501 में ऑर्डर करें</h3><p>नीचे दिए बटन से सिक्योर पेमेंट करें। पेमेंट कन्फर्म होते ही आपको Email भेजने का ऑप्शन मिलेगा।</p></div>
+      <div class="step"><div class="num">2</div><h3>Birth details भेजें</h3><p>Email पर अपना नाम, जन्म तिथि, जन्म समय और जन्म स्थान भेज दें। बस इतना ही चाहिए।</p></div>
+      <div class="step"><div class="num">3</div><h3>कुंडली पाएं</h3><p>24 घंटे के अंदर आपकी पर्सनलाइज़्ड 10-साल की कुंडली PDF Email पर। लाइफटाइम एक्सेस।</p></div>
     </div>
   </div>
 </section>
@@ -363,7 +375,7 @@ footer a{color:#e8d5b5}
 <!-- SAMPLE TESTIMONIALS: AI photos + sample text. Replace with REAL customer reviews and photos before launch. -->
       <div class="testi"><div class="stars">★★★★★</div><p>"मेरी कुंडली में जो दशा लिखी थी, वही मेरे करियर में हुआ। उपाय आसान थे, मैंने तुरंत शुरू कर दिए। पैसे वसूल।"</p><div class="who"><img class="tphoto" src="img/testi-aditya.webp" alt="Aditya Sharma" loading="lazy"><span>Aditya Sharma</span></div><div class="role">Small Business Owner</div></div>
       <div class="testi"><div class="stars">★★★★★</div><p>"मैंने सोचा था सबके लिए एक जैसी होगी, पर मेरा नाम, मेरी birth details, सब कुछ मेरा था। पहली बार किसी कुंडली ने मुझे सच में समझा।"</p><div class="who"><img class="tphoto" src="img/testi-rakes.webp" alt="Rakes Kumawat" loading="lazy"><span>Rakes Kumawat</span></div><div class="role">College Student</div></div>
-      <div class="testi"><div class="stars">★★★★★</div><p>"24 घंटे में WhatsApp पर मिल गई। उपाय इतने आसान कि रोज़ कर पा रही हूं। रिश्तों वाला सेक्शन तो बिल्कुल सटीक था।"</p><div class="who"><img class="tphoto" src="img/testi-priya.webp" alt="Priya Verma" loading="lazy"><span>Priya Verma</span></div><div class="role">Teacher</div></div>
+      <div class="testi"><div class="stars">★★★★★</div><p>"24 घंटे में Email पर मिल गई। उपाय इतने आसान कि रोज़ कर पा रही हूं। रिश्तों वाला सेक्शन तो बिल्कुल सटीक था।"</p><div class="who"><img class="tphoto" src="img/testi-priya.webp" alt="Priya Verma" loading="lazy"><span>Priya Verma</span></div><div class="role">Teacher</div></div>
     </div>
   </div>
 </section>
@@ -384,12 +396,12 @@ footer a{color:#e8d5b5}
         <li>आपकी birth details से 100% personalized कुंडली PDF</li>
         <li>अगले 10 साल का पूर्वानुमान और उपाय</li>
         <li>6 बोनस रिपोर्ट (कुल मूल्य ₹3,094) — FREE</li>
-        <li>24 घंटे में WhatsApp + Email डिलीवरी</li>
+        <li>24 घंटे में Email डिलीवरी</li>
         <li>लाइफटाइम डाउनलोड एक्सेस</li>
         <li>Birth details में गलती? एक बार FREE correction</li>
       </ul>
       <a class="btn big" href="#" data-buy>अभी ऑर्डर करें — ₹501</a>
-      <p class="fine">🔒 100% सिक्योर पेमेंट &nbsp;•&nbsp; पेमेंट के तुरंत बाद WhatsApp लिंक मिलेगा</p>
+      <p class="fine">🔒 100% सिक्योर पेमेंट &nbsp;•&nbsp; पेमेंट के तुरंत बाद birth details भेजने का ऑप्शन मिलेगा</p>
     </div>
   </div>
 </section>
@@ -400,8 +412,8 @@ footer a{color:#e8d5b5}
     <div class="sec-kicker">सवाल जवाब</div>
     <h2 class="sec-title">अक्सर पूछे जाने वाले सवाल</h2>
     <div class="faq">
-      <details><summary>Birth details कैसे भेजूं?</summary><p>पेमेंट के बाद आपको WhatsApp लिंक मिलेगा। उस पर अपना नाम, जन्म तिथि, जन्म समय और जन्म स्थान भेज दें। बस।</p></details>
-      <details><summary>कुंडली मिलने में कितना समय लगेगा?</summary><p>Birth details मिलने के 24 घंटे के अंदर आपकी personalized कुंडली PDF WhatsApp और Email दोनों पर भेज दी जाएगी।</p></details>
+      <details><summary>Birth details कैसे भेजूं?</summary><p>पेमेंट के बाद आपको Email भेजने का बटन मिलेगा। उसमें अपना नाम, जन्म तिथि, जन्म समय और जन्म स्थान लिखकर भेज दें। बस।</p></details>
+      <details><summary>कुंडली मिलने में कितना समय लगेगा?</summary><p>Birth details मिलने के 24 घंटे के अंदर आपकी personalized कुंडली PDF Email पर भेज दी जाएगी।</p></details>
       <details><summary>मुझे अपना जन्म समय नहीं पता, तो?</summary><p>कोई बात नहीं। जितना याद हो उतना भेजें। समय न पता होने पर चंद्र कुंडली आधारित विश्लेषण दिया जाता है।</p></details>
       <details><summary>कुंडली किस भाषा में मिलेगी?</summary><p>आपकी पसंद: हिंदी या English। ऑर्डर के समय बता दें।</p></details>
       <details><summary>क्या यह computer से बनी generic कुंडली है?</summary><p>नहीं। आपका लग्न चार्ट और दशा असली गणना से निकाली जाती है, और हर सेक्शन आपकी कुंडली के हिसाब से personally लिखा जाता है। दो लोगों की कुंडली एक जैसी नहीं हो सकती।</p></details>
@@ -423,7 +435,7 @@ footer a{color:#e8d5b5}
   <div class="wrap">
     <div>
       <h4>संपर्क करें</h4>
-      <p>📞 +91-XXXXXXXXXX<br>✉️ youremail@example.com</p>
+      <p>✉️ youremail@example.com</p>
     </div>
     <div>
       <h4>Karam Kundali</h4>
@@ -438,13 +450,27 @@ footer a{color:#e8d5b5}
   <a class="btn" href="#buy" data-buy>अभी पाएं</a>
 </div>
 
+<div class="pay-modal" id="payModal" hidden>
+  <div class="pay-box">
+    <div class="pay-tick">✓</div>
+    <h3>Payment Successful!</h3>
+    <p>आपका ऑर्डर कन्फर्म हो गया है।</p>
+    <div class="pay-id">Payment ID: <b id="payIdText"></b></div>
+    <p>अपनी <b>birth details</b> (नाम, जन्म तिथि, जन्म समय, जन्म स्थान, भाषा) इस Email पर भेजें:</p>
+    <p class="pay-email" id="payEmailText"></p>
+    <a class="btn big" id="payMailBtn" href="#">Email App Kholein</a>
+    <button class="pay-link" id="payCopyBtn">Email address copy karein</button>
+    <br><button class="pay-link" id="payCloseBtn">Band karein</button>
+  </div>
+</div>
+
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
 // Razorpay live Key ID (publishable — safe in frontend code; never put the secret key here)
 var RAZORPAY_KEY_ID = "rzp_live_TkpUlMvmVBtvyr";
 var AMOUNT_PAISE = 50100; // Rs 501
-// TODO: replace with your real WhatsApp number, e.g. "https://wa.me/919876543210"
-var WHATSAPP_URL = "https://wa.me/91XXXXXXXXXX";
+// TODO: replace with your real support email, e.g. "care@karamkundali.com"
+var SUPPORT_EMAIL = "youremail@example.com";
 
 function openRazorpay(){
   if(typeof Razorpay === "undefined"){ alert("Payment gateway load nahi ho raha. Apna internet check karke dobara try karein."); return; }
@@ -455,12 +481,7 @@ function openRazorpay(){
     name: "Karam Kundali",
     description: "Personalized 10-Year Kundali",
     theme: { color: "#7B1E1E" },
-    handler: function(resp){
-      var msg = "Namaste! Maine apni Karam Kundali order ki hai." +
-        "%0A%0APayment ID: " + resp.razorpay_payment_id +
-        "%0A%0AMeri birth details:%0AName: %0ADate of Birth: %0ATime of Birth: %0APlace of Birth: %0ALanguage (Hindi/English): ";
-      window.location.href = WHATSAPP_URL + "?text=" + msg;
-    },
+    handler: function(resp){ showPaySuccess(resp.razorpay_payment_id); },
     modal: { ondismiss: function(){} }
   });
   rzp.on("payment.failed", function(resp){
@@ -471,6 +492,24 @@ function openRazorpay(){
 }
 document.querySelectorAll("[data-buy]").forEach(function(el){
   el.addEventListener("click", function(e){ e.preventDefault(); openRazorpay(); });
+});
+
+function showPaySuccess(paymentId){
+  document.getElementById("payIdText").textContent = paymentId;
+  document.getElementById("payEmailText").textContent = SUPPORT_EMAIL;
+  var subject = encodeURIComponent("Karam Kundali Order - " + paymentId);
+  var body = encodeURIComponent("Namaste! Maine apni Karam Kundali order ki hai.\n\nPayment ID: " + paymentId + "\n\nMeri birth details:\nName: \nDate of Birth: \nTime of Birth: \nPlace of Birth: \nLanguage (Hindi/English): ");
+  document.getElementById("payMailBtn").href = "mailto:" + SUPPORT_EMAIL + "?subject=" + subject + "&body=" + body;
+  document.getElementById("payModal").hidden = false;
+  document.body.style.overflow = "hidden";
+}
+document.getElementById("payCloseBtn").addEventListener("click", function(){
+  document.getElementById("payModal").hidden = true;
+  document.body.style.overflow = "";
+});
+document.getElementById("payCopyBtn").addEventListener("click", function(){
+  var t = this;
+  if(navigator.clipboard){ navigator.clipboard.writeText(SUPPORT_EMAIL).then(function(){ t.textContent = "Copied!"; }); }
 });
 </script>
 </body>
