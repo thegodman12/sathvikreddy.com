@@ -52363,7 +52363,8 @@ f="Scan failed"
 if(t.P.b(h)){a=A.aU(h.h(0,"error"))
 g=a==null?g:a
 a0=A.aU(h.h(0,"message"))
-f=a0==null?f:a0}throw A.e(A.asp(g,f))}else throw a1
+f=a0==null?f:a0}if(B.e.q(f.toLowerCase(),"compute resources"))f="The scan took too long and timed out. Please try again, or photograph fewer items at once."
+throw A.e(A.asp(g,f))}else throw a1
 s=6
 break
 case 3:s=2
